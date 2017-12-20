@@ -1,7 +1,6 @@
 {
-  "name": "pw",
+  "name": "personal_website",
   "homepage": "http://patrickduncan.co",
-  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.0.0",
