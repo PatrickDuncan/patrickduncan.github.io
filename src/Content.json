@@ -1,0 +1,343 @@
+{
+  "colors": {
+    "50": {
+      "blue": "#E3F2FD",
+      "cyan": "#E0F7FA",
+      "green": "#E8F5E9",
+      "grey": "#FAFAFA",
+      "lime": "#F9FBE7",
+      "orange": "#FFF3E0"
+    },
+    "100": {
+      "cyan": "#B2EBF2",
+      "green": "#C8E6C9"
+    },
+    "200": {
+      "blue": "#90CAF9",
+      "blue_grey": "#B0BEC5",
+      "cyan": "#80DEEA",
+      "green": "#A5D6A7",
+      "indigo": "#9FA8DA",
+      "lime": "#E6EE9C",
+      "orange": "#FFCC80"
+    },
+    "300": {
+      "amber": "#FFD54F",
+      "blue": "#64B5F6",
+      "blue_grey": "#90A4AE",
+      "brown": "#A1887F",
+      "cyan": "#4DD0E1",
+      "deep_orange": "#FF8A65",
+      "deep_purple": "#9575CD",
+      "green": "#81C784",
+      "grey": "#E0E0E0",
+      "indigo": "#7986CB",
+      "light_blue": "#4FC3F7",
+      "light_green": "#AED581",
+      "lime": "#DCE775",
+      "orange": "#FFB74D",
+      "pink": "#F06292",
+      "purple": "#BA68C8",
+      "red": "#E57373",
+      "teal": "#4DB6AC",
+      "yellow": "#FFF176"
+    },
+    "500": {
+      "blue": "#2196F3",
+      "blue_grey": "#546E7A",
+      "indigo": "#3F51B5"
+    },
+    "700": {
+      "green": "#388E3C"
+    },
+    "900": {
+      "grey": "#212121",
+      "orange": "#E65100"
+    },
+    "1000": {
+      "grey": "#000"
+    }
+  },
+
+  "diamondSvg": {
+    "points": [
+      "130,353 165,396 130,439 95 ,396",
+      "200,353 235,396 200,439 165,396",
+      "270,353 305,396 270,439 235,396",
+      "620,353 655,396 620,439 585,396",
+      "550,353 585,396 550,439 515,396",
+      "480,353 515,396 480,439 445,396",
+      "375,654 410,697 375,740 340,697",
+      "375, 52 410, 95 375,138 340, 95",
+      "375,568 410,611 375,654 340,611",
+      "375,138 410,181 375,224 340,181",
+      "375,482 410,525 375,568 340,525",
+      "375,224 410,267 375,310 340,267",
+      "305,482 340,525 305,568 270,525",
+      "305,224 340,267 305,310 270,267",
+      "445,482 480,525 445,568 410,525",
+      "445,224 480,267 445,310 410,267",
+      "410,525 445,568 410,611 375,568",
+      "410,181 445,224 410,267 375,224",
+      "340,525 375,568 340,611 305,568",
+      "340,181 375,224 340,267 305,224",
+      "340,611 375,654 340,697 305,654",
+      "340, 95 375,138 340,181 305,138",
+      "305,568 340,611 305,654 270,611",
+      "305,138 340,181 305,224 270,181",
+      "270,525 305,568 270,611 235,568",
+      "270,181 305,224 270,267 235,224",
+      "235,482 270,525 235,568 200,525",
+      "235,224 270,267 235,310 200,267",
+      "200,439 235,482 200,525 165,482",
+      "200,267 235,310 200,353 165,310",
+      "270,439 305,482 270,525 235,482",
+      "270,267 305,310 270,353 235,310",
+      "340,439 375,482 340,525 305,482",
+      "340,267 375,310 340,353 305,310",
+      "165,396 200,439 165,482 130,439",
+      "165,310 200,353 165,396 130,353",
+      "235,396 270,439 235,482 200,439",
+      "235,310 270,353 235,396 200,353",
+      "305,396 340,439 305,482 270,439",
+      "480,439 515,482 480,525 445,482",
+      "480,267 515,310 480,353 445,310",
+      "410,439 445,482 410,525 375,482",
+      "410,267 445,310 410,353 375,310",
+      "585,396 620,439 585,482 550,439",
+      "585,310 620,353 585,396 550,353",
+      "515,396 550,439 515,482 480,439",
+      "515,310 550,353 515,396 480,353",
+      "445,396 480,439 445,482 410,439",
+      "445,310 480,353 445,396 410,353",
+      "410,611 445,654 410,697 375,654",
+      "410, 95 445,138 410,181 375,138",
+      "445,568 480,611 445,654 410,611",
+      "445,138 480,181 445,224 410,181",
+      "480,525 515,568 480,611 445,568",
+      "480,181 515,224 480,267 445,224",
+      "515,482 550,525 515,568 480,525",
+      "515,224 550,267 515,310 480,267",
+      "550,439 585,482 550,525 515,482",
+      "550,267 585,310 550,353 515,310",
+      "305,310 340,353 305,396 270,353"
+    ]
+  },
+
+  "Navbar": {
+    "links": [
+      {
+        "link": "https://twitter.com/TurtleArbitrary",
+        "text": "My Twitter",
+        "color": "blue",
+        "light": "200",
+        "dark": "500"
+      },
+      {
+        "link": "https://musescore.com/arbitraryturtle",
+        "text": "My Compositions",
+        "color": "blue_grey",
+        "light": "200",
+        "dark": "500"
+      },
+      {
+        "link": "https://www.linkedin.com/in/patrickdiamonduncan",
+        "text": "My LinkedIn",
+        "color": "indigo",
+        "light": "200",
+        "dark": "500"
+      },
+      {
+        "link": "https://github.com/PatrickDuncan",
+        "text": "My GitHub",
+        "color": "grey",
+        "light": "300",
+        "dark": "1000"
+      },
+      {
+        "link": "mailto:patrick.duncan@outlook.com",
+        "text": "Email Me",
+        "color": "green",
+        "light": "200",
+        "dark": "700"
+      }
+    ]
+  },
+
+  "work": [
+    {
+      "company": "Bell Mobility",
+      "position": "Application and Service Development",
+      "timeRange": "Aug 2017 - Aug 2018",
+      "description": [
+        "Worked on their Automation Framework that uses Ruby and Appium.",
+        "Penned a wiki for the Framework which went over installation and use cases.",
+        "Reviewed resumes and conducted interviews at 3 different universities!"
+      ]
+    },
+    {
+      "company": "Airo Health",
+      "position": "Software Engineer",
+      "timeRange": "May - Jul 2017",
+      "description": [
+        "Built their dashboard from the ground up with React and Redux.",
+        "Designed their database schema for messaging, permissions and user info.",
+        "Implemented the messaging on the dashboard and React Native app.",
+        "Worked heavily with Amazon Web Services and Firebase."
+      ]
+    },
+    {
+      "company": "Ingle International",
+      "position": "User Experience Engineer",
+      "timeRange": "May - Aug 2016",
+      "description": [
+        "Created their new Content Management System for one of their major products with React and Redux.",
+        "Reconfigured their AngularJS powered product to use the new version of their API.",
+        "Wrote tests and fixed bugs for multiple products.",
+        "Worked on their app for the last two weeks."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Soul Emission",
+      "blurb": "2D Atmospheric Space Shooter",
+      "timeRange": "Jul 2015 - Sep 2015",
+      "description": "Soul Emission is a 2D atmospheric sci-fi shooter. The main goal of the game is to recover your body by transversing through your ship. The game features multiple ammunition types and unique enemies. I also created all the art in the game.",
+      "languages": "C#",
+      "tools": "Unity 5, GIMP",
+      "links": [
+        {
+          "link": "https://github.com/PatrickDuncan/Soul_Emission",
+          "text": "Github"
+        },
+        {
+          "link": "https://www.youtube.com/watch?v=piAI1Lhr_RM",
+          "text": "Gameplay Video"
+        },
+        {
+          "link": "https://www.youtube.com/watch?v=wb8DxLF_7c8",
+          "text": "Features Video"
+        }
+      ],
+      "image": "soul-pic"
+    },
+    {
+      "name": "What to Do",
+      "blurb": "Android Productivity App",
+      "timeRange": "May 2015",
+      "description": "What to Do is an Android app that is modeled after the physical notepad, it allows you to write down what's important with minimal effort and lets you move on with your day. It takes the information you write down and neatly presents it in a notification for you to see in any situation.",
+      "languages": "Java",
+      "tools": "Android Studio",
+      "links": [
+        {
+          "link": "https://github.com/PatrickDuncan/WhatToDo",
+          "text": "Github"
+        },
+        {
+          "link": "https://play.google.com/store/apps/details?id=arbitraryturtle.whattodo",
+          "text": "Google Play"
+        }
+      ],
+      "image": "wtd-screen"
+    },
+    {
+      "name": "Roman Fury",
+      "blurb": "2D Fantasy Game",
+      "timeRange": "Nov 2013 - Jan 2014",
+      "description": "I wanted to create a game with multiple levels containing unique enemies and had a focus on fighting for my grade 12 summative. I ended up being able to create the exact game I aimed for before development. The fighting is responsive and focuses on timing when to attack and block. I also created all of the art.",
+      "languages": "Java",
+      "tools": "GIMP, NetBeans",
+      "links": [
+        {
+          "link": "https://github.com/PatrickDuncan/roman_fury",
+          "text": "Github"
+        },
+        {
+          "link": "https://www.youtube.com/watch?v=-QfeTqeVVys",
+          "text": "Gameplay Video"
+        }
+      ],
+      "image": "roman"
+    }
+  ],
+
+  "skills": {
+    "graphData": [{
+        "language": "JavaScript",
+        "proficiency": 5.30
+      },
+      {
+        "language": "React",
+        "proficiency": 5.30
+      },
+      {
+        "language": "Ruby",
+        "proficiency": 5.00
+      },
+      {
+        "language": "Redux",
+        "proficiency": 4.60
+      },
+      {
+        "language": "Java",
+        "proficiency": 4.50
+      },
+      {
+        "language": "CSS",
+        "proficiency": 4.50
+      },
+      {
+        "language": "C/C++",
+        "proficiency": 3.50
+      },
+      {
+        "language": "SQL",
+        "proficiency": 2.50
+      },
+      {
+        "language": "Python",
+        "proficiency": 2.00
+      }
+    ],
+    "searchData": [
+      "Appium",
+      "Angular",
+      "Amazon Web Services",
+      "Assembly",
+      "C++",
+      "C#",
+      "CSS",
+      "Databases",
+      "ES6",
+      "Firebase",
+      "GIMP",
+      "Git",
+      "HTML",
+      "Java",
+      "JavaScript",
+      "Mautic",
+      "npm",
+      "Python",
+      "React",
+      "React Native",
+      "Redux",
+      "Ruby",
+      "Ruby on Rails",
+      "SQL",
+      "Source Tree",
+      "svn",
+      "Unity",
+      "webpack"
+    ]
+  },
+
+  "education": {
+    "degree": "B.A.Sc Computer Science",
+    "award": "Deans' Honour List",
+    "gpa": "GPA: 3.59 / 4.0"
+  },
+
+  "about": "I have always been passionate about technology, whether it be researching what computer parts to buy or freaking out about the latest phones, so I jumped at the opportunity to take a computer science course in high school. I ended up loving programming and the capacity it gives you to expressive your creativity, so I decided to pursue it in university. Through school work, side projects and work experience I have built up a solid software foundation, though I do believe learning is a  `while (true);` process."
+}
