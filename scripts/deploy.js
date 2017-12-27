@@ -56,6 +56,7 @@ const moveFolderToRoot = folder => {
 }
 
 const deploy = () => {
+  shell('echo "patrickduncan.co" >> CNAME');
   shell('git add --a');
   shell('git commit -m "auto-deploy"');
   shell('git push --set-upstream origin master');
