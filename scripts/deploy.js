@@ -30,7 +30,7 @@ const getMasterCheckoutOptions = branch => {
 * @param {String} branch - The branch to checkout
 */
 const checkoutBranch = branch => {
-  shell(`git checkout ${get_master_checkout_options(branch)} ${branch}`);
+  shell(`git checkout ${getMasterCheckoutOptions(branch)} ${branch}`);
 }
 
 shell('npm run build');
