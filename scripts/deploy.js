@@ -37,6 +37,7 @@ const getBranchCheckoutOptions = branch => {
 */
 const checkoutBranch = branch => {
   shell(`git checkout ${getBranchCheckoutOptions(branch)} ${branch}`);
+  console.log("1")
 }
 
 // Remove files/folders that are not needed for production
@@ -45,24 +46,25 @@ const removeDevFiles = () => {
   globby(['*', '!build', '!.git*', '!node_modules'], GLOBBY_OPT)
   .then(paths => {
     paths.forEach(path => {
-      rimraf(path, {}, () => {});
+      rimraf.sync(path);
     });
   });
 }
 
 const moveFolderToRoot = folder => {
   shell(`mv ${folder}/* .`);
-  rimraf(folder, {}, () => {});
+  rimraf.sync(folder);
 }
 
 const deploy = () => {
   shell('git add --a');
-  shell('git commit -m "auto-deploy"');
-  shell('git push --set-upstream origin master');
+  // shell('git commit -m "auto-deploy"');
+  // shell('git push --set-upstream origin master');
 }
 
 const resetEnvironment = () => {
   checkoutBranch('deploy');
+  console.log("2")
   shell('git reset --hard');
 }
 
@@ -70,5 +72,5 @@ initialSetup();
 checkoutBranch('master');
 removeDevFiles();
 moveFolderToRoot('build');
-// deploy();
-// resetEnvironment();
+deploy();
+resetEnvironment();
