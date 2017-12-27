@@ -42,11 +42,10 @@ const checkoutBranch = branch => {
 
 // Remove files/folders that are not needed for production
 const removeDevFiles = () => {
-  console.log(shell('ls -a'))
-  const keepFiles = ['build', '.git', '.gitignore', 'node_modules'];
+  const filesToKeep = ['.', '..', 'build', '.git', '.gitignore', 'node_modules'];
   shell('ls -a')
   .split('\n')
-  .filter(f => keepFiles.indexOf(f) == -1)
+  .filter(f => filesToKeep.indexOf(f) == -1)
   .forEach(f => {
     rimraf.sync(f);
   });
