@@ -16,14 +16,14 @@ const shell = command => {
 
 /*
 * @param {String} branch - Which branch to check
-* @return {String} - -b if the branch doesn't exist
+* @return {String} - The arg to use if the branch doesn't exist
 */
-const getMasterCheckoutOptions = branch => {
+const getBranchCheckoutOptions = branch => {
   return shell('git branch')
          .split('\n')
          .map(s => s.trim())
          .indexOf(branch)
-         === -1 ? "-b" : ""
+         === -1 ? "--orphan" : ""
 }
 
 /*
@@ -31,7 +31,7 @@ const getMasterCheckoutOptions = branch => {
 * @param {String} branch - The branch to checkout
 */
 const checkoutBranch = branch => {
-  shell(`git checkout ${getMasterCheckoutOptions(branch)} ${branch}`);
+  shell(`git checkout ${getBranchCheckoutOptions(branch)} ${branch}`);
 }
 
 // Remove files/folders that are not needed for production
@@ -39,7 +39,7 @@ const removeDevFiles = () => {
   const GLOBBY_OPT = {nodir: false, dot: true}
   globby(['*', '!build', '!.git*', '!node_modules'], GLOBBY_OPT)
   .then(paths => {
-    paths.map(path => {
+    paths.forEach(path => {
       rimraf(path, {}, () => {});
     });
   });
