@@ -56,11 +56,14 @@ const moveFolderToRoot = folder => {
 }
 
 const deploy = () => {
-  shell("git add --a");
+  shell('git add --a');
+  shell('git commit -m "auto-deploy"');
+  shell('git push --set-upstream origin master');
 }
 
 const resetEnvironment = () => {
   checkoutBranch('deploy');
+  shell('git reset --hard');
 }
 
 initialSetup();
