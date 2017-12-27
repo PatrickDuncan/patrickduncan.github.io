@@ -9,7 +9,7 @@ const rimraf = require('rimraf');
 * @param {String} command - Which command to run
 * @return {String} - The standard output
 */
-const SHELL = command => {
+const shell = command => {
   return execSync(command).toString('utf8');
 }
 
@@ -17,7 +17,7 @@ const SHELL = command => {
 * @param {String} branch - Which branch to check
 * @return {String} - -b if the branch doesn't exist
 */
-const get_master_checkout_options = branch => {
+const getMasterCheckoutOptions = branch => {
   return SHELL('git branch')
          .split('\n')
          .map(s => s.trim())
@@ -29,6 +29,6 @@ const get_master_checkout_options = branch => {
 * Git checkouts a branch
 * @param {String} branch - The branch to checkout
 */
-const checkout_branch = branch => {
+const checkoutBranch = branch => {
   SHELL(`git checkout ${get_master_checkout_options(branch)} ${branch}`);
 }
