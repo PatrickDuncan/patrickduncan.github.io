@@ -40,7 +40,7 @@ const removeDevFiles = () => {
   globby(['*', '!build', '!.git*', '!node_modules'], GLOBBY_OPT)
   .then(paths => {
     paths.map(path => {
-      rimraf(path);
+      rimraf(path, {}, () => {});
     });
   });
 }
