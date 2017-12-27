@@ -37,12 +37,12 @@ const getBranchCheckoutOptions = branch => {
 */
 const checkoutBranch = branch => {
   shell(`git checkout ${getBranchCheckoutOptions(branch)} ${branch}`);
-  console.log("1")
 }
 
 // Remove files/folders that are not needed for production
 const removeDevFiles = () => {
-  const filesToKeep = ['.', '..', 'build', '.git', '.gitignore', 'node_modules'];
+  const filesToKeep = ['', '.', '..', '.git', '.gitignore',
+                       'build', 'node_modules'];
   shell('ls -a')
   .split('\n')
   .filter(f => filesToKeep.indexOf(f) == -1)
@@ -58,8 +58,8 @@ const moveFolderToRoot = folder => {
 
 const deploy = () => {
   shell('git add --a');
-  // shell('git commit -m "auto-deploy"');
-  // shell('git push --set-upstream origin master');
+  shell('git commit -m "auto-deploy"');
+  shell('git push --set-upstream origin master');
 }
 
 const resetEnvironment = () => {
