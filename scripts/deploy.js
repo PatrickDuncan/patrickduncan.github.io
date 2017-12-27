@@ -42,12 +42,13 @@ const checkoutBranch = branch => {
 
 // Remove files/folders that are not needed for production
 const removeDevFiles = () => {
-  const GLOBBY_OPT = {nodir: false, dot: true}
-  globby(['*', '!build', '!.git*', '!node_modules'], GLOBBY_OPT)
-  .then(paths => {
-    paths.forEach(path => {
-      rimraf.sync(path);
-    });
+  console.log(shell('ls -a'))
+  const keepFiles = ['build', '.git', '.gitignore', 'node_modules'];
+  shell('ls -a')
+  .split('\n')
+  .filter(f => keepFiles.indexOf(f) == -1)
+  .forEach(f => {
+    rimraf.sync(f);
   });
 }
 
@@ -64,7 +65,6 @@ const deploy = () => {
 
 const resetEnvironment = () => {
   checkoutBranch('deploy');
-  console.log("2")
   shell('git reset --hard');
 }
 
