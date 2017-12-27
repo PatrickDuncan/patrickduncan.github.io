@@ -1,7 +1,7 @@
 'use strict';
 
 const chalk = require('chalk');
-const { exec } = require('child_process');
+const { execSync } = require('child_process');
 const rimraf = require('rimraf');
 
 /*
