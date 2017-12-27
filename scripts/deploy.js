@@ -32,3 +32,7 @@ const getMasterCheckoutOptions = branch => {
 const checkoutBranch = branch => {
   SHELL(`git checkout ${get_master_checkout_options(branch)} ${branch}`);
 }
+
+shell('npm run build');
+shell('git stash save before_deploy');
+checkoutBranch('master');
