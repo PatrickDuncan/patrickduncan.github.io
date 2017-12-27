@@ -2,6 +2,7 @@
 
 const chalk = require('chalk');
 const { execSync } = require('child_process');
+const globby = require('globby');
 const rimraf = require('rimraf');
 
 /*
@@ -33,6 +34,16 @@ const checkoutBranch = branch => {
   shell(`git checkout ${getMasterCheckoutOptions(branch)} ${branch}`);
 }
 
+const removeDevFiles = () => {
+  globby(['*', '!build', '!.git*', '!node_modules'])
+  .then(paths => {
+    paths.map(item => {
+      rimraf.sync(item);
+    });
+  });
+}
+
 shell('npm run build');
 shell('git stash save before_deploy');
 checkoutBranch('master');
+removeDevFiles();
