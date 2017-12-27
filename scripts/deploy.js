@@ -5,12 +5,6 @@ const { exec } = require('child_process');
 const rimraf = require('rimraf');
 
 // Takes in a shell command and executes it as you would expect
-const SHELL = (command, callback_execution) => {
-  exec(command, (error, stdout, stderr) => {
-    if (error) {
-      console.error(chalk.red(`${error}`));
-      return;
-    }
-    if (callback_execution) callback_execution(stdout, stderr);
-  });
+const SHELL = command => {
+  return execSync(command).toString('utf8');
 }
