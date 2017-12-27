@@ -2,7 +2,6 @@
 
 const chalk = require('chalk');
 const { execSync } = require('child_process');
-const globby = require('globby');
 const rimraf = require('rimraf');
 
 /*
