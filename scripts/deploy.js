@@ -18,7 +18,7 @@ const shell = command => {
 * @return {String} - -b if the branch doesn't exist
 */
 const getMasterCheckoutOptions = branch => {
-  return SHELL('git branch')
+  return shell('git branch')
          .split('\n')
          .map(s => s.trim())
          .indexOf(branch)
