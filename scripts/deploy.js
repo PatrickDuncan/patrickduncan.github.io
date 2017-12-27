@@ -8,3 +8,11 @@ const rimraf = require('rimraf');
 const SHELL = command => {
   return execSync(command).toString('utf8');
 }
+
+const get_master_checkout_options = () => {
+  return SHELL('git branch')
+         .split('\n')
+         .map(s => s.trim())
+         .indexOf('master')
+         === -1 ? "-b" : ""
+}
