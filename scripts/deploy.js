@@ -14,6 +14,11 @@ const shell = command => {
   return execSync(command).toString('utf8');
 }
 
+const initialSetup = () => {
+  shell('npm run build');
+  shell('git stash save before_deploy');
+}
+
 /*
 * @param {String} branch - Which branch to check
 * @return {String} - The arg to use if the branch doesn't exist
@@ -45,7 +50,22 @@ const removeDevFiles = () => {
   });
 }
 
-shell('npm run build');
-shell('git stash save before_deploy');
+const moveFolderToRoot = folder => {
+  shell(`mv ${folder}/* .`);
+  rimraf(folder, {}, () => {});
+}
+
+const deploy = () => {
+  shell("git add --a");
+}
+
+const resetEnvironment = () => {
+  checkoutBranch('deploy');
+}
+
+initialSetup();
 checkoutBranch('master');
 removeDevFiles();
+moveFolderToRoot('build');
+deploy();
+resetEnvironment();
