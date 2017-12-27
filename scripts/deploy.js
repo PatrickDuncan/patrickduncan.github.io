@@ -34,11 +34,13 @@ const checkoutBranch = branch => {
   shell(`git checkout ${getMasterCheckoutOptions(branch)} ${branch}`);
 }
 
+// Remove files/folders that are not needed for production
 const removeDevFiles = () => {
-  globby(['*', '!build', '!.git*', '!node_modules'])
+  const GLOBBY_OPT = {nodir: false, dot: true}
+  globby(['*', '!build', '!.git*', '!node_modules'], GLOBBY_OPT)
   .then(paths => {
-    paths.map(item => {
-      rimraf.sync(item);
+    paths.map(path => {
+      rimraf(path);
     });
   });
 }
