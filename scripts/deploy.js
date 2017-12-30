@@ -17,8 +17,7 @@ const shell = command => {
 }
 
 const initialSetup = () => {
-  console.log(...AMBER)
-  console.log(chalk.rgb(AMBER...).bold("Deploying..."));
+  console.log(chalk.rgb(...AMBER).bold("Deploying..."));
   shell('npm run build');
   shell('git stash save before_deploy');
 }
@@ -71,7 +70,7 @@ const deploy = () => {
 const resetEnvironment = () => {
   checkoutBranch('deploy');
   shell('git reset --hard');
-  console.log(chalk.rgb(AMBER...).bold("Deployed"));
+  console.log(chalk.rgb(...AMBER).bold("Deployed"));
 }
 
 initialSetup();
