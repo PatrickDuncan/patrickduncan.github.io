@@ -4,8 +4,6 @@ const chalk = require('chalk');
 const { execSync } = require('child_process');
 const rimraf = require('rimraf');
 
-const AMBER = [100, 60, 0];
-
 /*
 * Runs a command in a new shell in the repo's root directory.
 *
@@ -17,7 +15,7 @@ const shell = command => {
 }
 
 const initialSetup = () => {
-  console.log(chalk.rgb(...AMBER).bold("Deploying..."));
+  console.log(chalk.yellowBright.bold("Deploying..."));
   shell('npm run build');
   shell('git stash save before_deploy');
 }
@@ -70,7 +68,7 @@ const deploy = () => {
 const resetEnvironment = () => {
   checkoutBranch('deploy');
   shell('git reset --hard');
-  console.log(chalk.rgb(...AMBER).bold("Deployed"));
+  console.log(chalk.yellowBright.bold("Deployed"));
 }
 
 initialSetup();
