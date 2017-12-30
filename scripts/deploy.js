@@ -79,5 +79,5 @@ initialSetup();
 checkoutBranch('master');
 removeDevFiles();
 moveFolderToRoot('build');
-//deploy();
+deploy();
 resetEnvironment();
