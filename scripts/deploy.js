@@ -14,8 +14,12 @@ const shell = command => {
   return execSync(command).toString('utf8');
 }
 
+const showMessage = message => {
+  console.log(chalk.cyan.bold(message));
+}
+
 const initialSetup = () => {
-  console.log(chalk.yellowBright.bold("Deploying..."));
+  showMessage("Deploying...");
   shell('npm run build');
   shell('git stash save before_deploy');
 }
@@ -68,7 +72,7 @@ const deploy = () => {
 const resetEnvironment = () => {
   checkoutBranch('deploy');
   shell('git reset --hard');
-  console.log(chalk.yellowBright.bold("Deployed"));
+  cshowMessage("Deployed");
 }
 
 initialSetup();
