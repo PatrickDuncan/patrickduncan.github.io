@@ -37,7 +37,7 @@ const getBranchCheckoutOptions = branch => {
 }
 
 /*
-* Git checkouts a branch
+* Git checkout a branch
 *
 * @param {String} branch - The branch to checkout
 */
@@ -72,7 +72,7 @@ const deploy = () => {
 const resetEnvironment = () => {
   checkoutBranch('deploy');
   shell('git reset --hard');
-  cshowMessage("Deployed");
+  showMessage("Deployed");
 }
 
 initialSetup();
