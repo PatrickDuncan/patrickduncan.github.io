@@ -72,7 +72,7 @@ const deploy = () => {
 const resetEnvironment = () => {
   checkoutBranch('deploy');
   shell('git reset --hard');
-  showMessage("Deployed");
+  showMessage("Deployed successfully!");
 }
 
 initialSetup();
