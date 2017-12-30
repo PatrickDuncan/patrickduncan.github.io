@@ -1,13 +1,17 @@
 'use strict';
 
 const chalk = require('chalk');
+const chalkAnimation = require('chalk-animation');
 const { execSync } = require('child_process');
 const rimraf = require('rimraf');
 
+const status = chalkAnimation.rainbow("Deploying...", 0.1);
+
 /*
-* Runs a command in a new shell in the repo's root directory
-* @param {String} command - Which command to run
-* @return {String} - The standard output
+* Runs a command in a new shell in the repo's root directory.
+*
+* @param {String} command
+* @return {String} the standard output
 */
 const shell = command => {
   return execSync(command).toString('utf8');
@@ -15,12 +19,12 @@ const shell = command => {
 
 const initialSetup = () => {
   shell('npm run build');
-  shell('git stash save before_deploy');
+  //shell('git stash save before_deploy');
 }
 
 /*
-* @param {String} branch - Which branch to check
-* @return {String} - The arg to use if the branch doesn't exist
+* @param {String} branch
+* @return {String} the arg to use if the branch doesn't exist
 */
 const getBranchCheckoutOptions = branch => {
   return shell('git branch')
@@ -32,6 +36,7 @@ const getBranchCheckoutOptions = branch => {
 
 /*
 * Git checkouts a branch
+*
 * @param {String} branch - The branch to checkout
 */
 const checkoutBranch = branch => {
@@ -65,11 +70,12 @@ const deploy = () => {
 const resetEnvironment = () => {
   checkoutBranch('deploy');
   shell('git reset --hard');
+  status.replace("Deployed");
 }
 
 initialSetup();
 checkoutBranch('master');
 removeDevFiles();
 moveFolderToRoot('build');
-deploy();
+//deploy();
 resetEnvironment();
