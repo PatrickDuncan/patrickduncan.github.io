@@ -17,7 +17,7 @@ const shell = command => {
 }
 
 const initialSetup = () => {
-  console.log(AMBER...)
+  console.log(...AMBER)
   console.log(chalk.rgb(AMBER...).bold("Deploying..."));
   shell('npm run build');
   shell('git stash save before_deploy');
