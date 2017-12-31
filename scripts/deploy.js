@@ -52,7 +52,8 @@ const removeDevFiles = () => {
   });
 }
 
-/* Move a folder's contents to the root and then delete the folder
+/*
+* Move a folder's contents to the root and then delete the folder
 * @param {String} folder the folder to recursively move to the root
 */
 const moveFolderToRoot = folder => {
