@@ -82,7 +82,7 @@ moveFolderToRoot('build');
 try {
   deploy();
 }
-catch() {
+catch {
   showMessage("Nothing to deploy")
 }
 finally {
