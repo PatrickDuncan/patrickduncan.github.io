@@ -5,8 +5,6 @@ const { execSync } = require('child_process');
 const rimraf = require('rimraf');
 
 /*
-* Runs a command in a new shell in the repo's root directory.
-*
 * @param {String} command
 * @return {String} the standard output
 */
@@ -14,12 +12,14 @@ const shell = command => {
   return execSync(command).toString('utf8');
 }
 
-const showMessage = message => {
+// Print a yellow message to terminal
+const log = message => {
   console.log(chalk.yellowBright.bold(message));
 }
 
+// Build the website and clean up the working copy
 const initialSetup = () => {
-  showMessage("Deploying...");
+  log("Deploying...");
   shell('npm run build');
   shell('git stash save before_deploy');
 }
@@ -36,16 +36,11 @@ const getBranchCheckoutOptions = branch => {
          === -1 ? "--orphan" : "";
 }
 
-/*
-* Git checkout a branch
-*
-* @param {String} branch - The branch to checkout
-*/
+// @param {String} branch the branch to checkout
 const checkoutBranch = branch => {
   shell(`git checkout ${getBranchCheckoutOptions(branch)} ${branch}`);
 }
 
-// Remove files/folders that are not needed for production
 const removeDevFiles = () => {
   const filesToKeep = ['', '.', '..', '.git', '.gitignore',
                        'build', 'node_modules'];
@@ -57,6 +52,9 @@ const removeDevFiles = () => {
   });
 }
 
+/* Move a folder's contents to the root and then delete the folder
+* @param {String} folder the folder to recursively move to the root
+*/
 const moveFolderToRoot = folder => {
   shell(`mv ${folder}/* .`);
   rimraf.sync(folder);
@@ -85,9 +83,9 @@ try {
 }
 catch(err) {
   deployedSuccessfully = false;
-  showMessage("Nothing to deploy");
+  log("Nothing to deploy");
 }
 finally {
   resetEnvironment();
-  if (deployedSuccessfully) showMessage("Deployed successfully");
+  if (deployedSuccessfully) log("Deployed successfully");
 }
