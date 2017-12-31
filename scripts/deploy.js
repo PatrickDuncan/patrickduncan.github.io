@@ -72,19 +72,22 @@ const deploy = () => {
 const resetEnvironment = () => {
   checkoutBranch('deploy');
   shell('git reset --hard');
-  showMessage("Deployed successfully");
 }
 
 initialSetup();
 checkoutBranch('master');
 removeDevFiles();
 moveFolderToRoot('build');
+
+let nothingToDeploy = false;
 try {
   deploy();
 }
 catch(err) {
-  showMessage("Nothing to deploy")
+  nothingToDeploy = true
+  showMessage("Nothing to deploy");
 }
 finally {
   resetEnvironment();
+  if (nothingToDeploy) showMessage("Deployed successfully");
 }
