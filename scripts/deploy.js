@@ -15,7 +15,7 @@ const shell = command => {
 }
 
 const showMessage = message => {
-  console.log(chalk.cyan.bold(message));
+  console.log(chalk.yellowBright.bold(message));
 }
 
 const initialSetup = () => {
@@ -72,12 +72,17 @@ const deploy = () => {
 const resetEnvironment = () => {
   checkoutBranch('deploy');
   shell('git reset --hard');
-  showMessage("Deployed successfully!");
+  showMessage("Deployed successfully");
 }
 
 initialSetup();
 checkoutBranch('master');
 removeDevFiles();
 moveFolderToRoot('build');
-deploy();
-resetEnvironment();
+try {
+  deploy();
+} catch {
+  showMessage("Nothing to deploy")
+} finally {
+  resetEnvironment();
+}
