@@ -33,7 +33,7 @@ const getBranchCheckoutOptions = branch => {
          .split('\n')
          .map(s => s.trim())
          .indexOf(branch)
-         === -1 ? "--orphan" : ""
+         === -1 ? "--orphan" : "";
 }
 
 /*
@@ -79,12 +79,12 @@ checkoutBranch('master');
 removeDevFiles();
 moveFolderToRoot('build');
 
-let deployedSuccessfully = false;
+let deployedSuccessfully = true;
 try {
   deploy();
 }
 catch(err) {
-  deployedSuccessfully = true
+  deployedSuccessfully = false;
   showMessage("Nothing to deploy");
 }
 finally {
