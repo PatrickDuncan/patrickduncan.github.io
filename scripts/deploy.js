@@ -80,11 +80,14 @@ checkoutBranch('master');
 removeDevFiles();
 moveFolderToRoot('build');
 try {
-  deploy();
-}
-catch {
-  showMessage("Nothing to deploy")
-}
-finally {
-  resetEnvironment();
-}
+        if(x == "") throw "Empty";
+        if(isNaN(x)) throw "Not a number";
+        if(x > 10) throw "Too high";
+        if(x < 5) throw "Too low";
+    }
+    catch(err) {
+        message.innerHTML = "Error: " + err + ".";
+    }
+    finally {
+        document.getElementById("demo").value = "";
+    }
