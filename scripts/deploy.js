@@ -79,15 +79,15 @@ checkoutBranch('master');
 removeDevFiles();
 moveFolderToRoot('build');
 
-let nothingToDeploy = false;
+let deployedSuccessfully = false;
 try {
   deploy();
 }
 catch(err) {
-  nothingToDeploy = true
+  deployedSuccessfully = true
   showMessage("Nothing to deploy");
 }
 finally {
   resetEnvironment();
-  if (nothingToDeploy) showMessage("Deployed successfully");
+  if (deployedSuccessfully) showMessage("Deployed successfully");
 }
