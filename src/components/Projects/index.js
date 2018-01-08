@@ -7,7 +7,7 @@ import ProjectContent from './Content';
 import Selection from './../common/Selection';
 import SoulImg from './../../assets/soul.png';
 import WtdImg from './../../assets/wtd.png';
-import RomeImg from './../../assets/romanFury.png';
+import RomeImg from './../../assets/roman-fury.png';
 
 const BG_COLOUR = Content.colors["50"].green;
 const SELECTED_COLOUR = Content.colors["100"].green;
