@@ -37,8 +37,10 @@ const getBranchCheckoutOptions = branch => {
 }
 
 // @param {String} branch the branch to checkout
-const checkoutBranch = branch => {
-  shell(`git checkout ${getBranchCheckoutOptions(branch)} ${branch}`);
+const checkoutBranch = (branch, checkBranchExistance) => {
+  checkBranchExistance
+  ? shell(`git checkout ${getBranchCheckoutOptions(branch)} ${branch}`)
+  : shell(`git checkout ${branch}`);
 }
 
 const removeDevFiles = () => {
@@ -68,13 +70,23 @@ const deploy = () => {
   shell('git push --set-upstream origin master');
 }
 
-const resetEnvironment = () => {
-  checkoutBranch('deploy');
+// @return {String} the current branch name
+const getCurrentBranch = () => {
+  let currentBranch = shell(
+    'git branch 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \\(.*\\)/\\1/"'
+  );
+  return currentBranch.replace("\n", "");
+}
+
+// @param {String} the branch before deploying
+const resetEnvironment = currentBranch => {
+  checkoutBranch(currentBranch, false);
   shell('git reset --hard');
 }
 
+const CURRENT_BRANCH = getCurrentBranch()
 initialSetup();
-checkoutBranch('master');
+checkoutBranch('master', true);
 removeDevFiles();
 moveFolderToRoot('build');
 
@@ -87,6 +99,6 @@ catch(err) {
   log("Nothing to deploy");
 }
 finally {
-  resetEnvironment();
+  resetEnvironment(CURRENT_BRANCH);
   if (deployedSuccessfully) log("Deployed successfully");
 }
