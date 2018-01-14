@@ -1,10 +1,16 @@
 ## Personal Website
 
-### Dependencies
+### Install Dependencies
 ```npm install```
 
-### Run Dev
+### Run
 ```npm start```
 
-### Run Prod
+### Build Production
 ```npm run build```
+
+### Invoke Test Watcher
+```npm run test```
+
+### Deploy to Master
+```npm run deploy```
