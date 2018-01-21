@@ -15,9 +15,12 @@ const SELECTED_COLOUR = Content.colors["100"].cyan;
 let thisElement;
 
 class Work extends Component {
-  state = {
-    hover: -1,
-    selection: -1
+  constructor(props) {
+    super(props)
+    this.state = {
+      hover: -1,
+      selection: -1
+    }
   }
 
   changeHover(hover) {

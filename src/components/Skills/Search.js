@@ -5,8 +5,11 @@ import Content from './../../Content';
 const LANGUAGE_BG_COLOR = Content.colors["900"].orange;
 
 class Search extends Component {
-  state = {
-    query: ""
+  constructor(props) {
+    super(props)
+    this.state = {
+      query: ""
+    }
   }
 
   changeQuery(e) {

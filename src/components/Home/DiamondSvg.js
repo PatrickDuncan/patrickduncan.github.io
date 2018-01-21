@@ -12,8 +12,11 @@ const TEXT_STYLE = {fontSize: 80, fontWeight: "600"};
 let reanimating = false;
 
 class DiamondSvg extends Component {
-  state = {
-    reanimate: true
+  constructor(props) {
+    super(props)
+    this.state = {
+      reanimate: true
+    }
   }
 
   reAnimate() {

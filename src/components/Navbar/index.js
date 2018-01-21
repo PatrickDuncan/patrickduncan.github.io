@@ -27,8 +27,11 @@ const COLOR_MAP = [
 ]
 
 class Navbar extends Component {
-  state = {
-    showIcons: false
+  constructor(props) {
+    super(props)
+    this.state = {
+      showIcons: false
+    }
   }
 
   render() {

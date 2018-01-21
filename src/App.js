@@ -15,8 +15,11 @@ import Content from './Content';
 const COLORS = Content.colors["200"];
 
 class App extends Component {
-  state = {
-    navIndex: 0
+  constructor(props) {
+    super(props)
+    this.state = {
+      navIndex: 0
+    }
   }
 
   updateNav(navIndex) {
