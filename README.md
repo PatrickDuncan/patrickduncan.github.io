@@ -1,5 +1,6 @@
 ## Personal Website
 
+[![Build Status](https://travis-ci.org/PatrickDuncan/patrickduncan.github.io.svg?branch=development)](https://travis-ci.org/PatrickDuncan/patrickduncan.github.io)
 ### Install Dependencies
 ```npm install```
 
@@ -10,7 +11,7 @@
 ```npm run build```
 
 ### Invoke Test Watcher
-```npm run test```
+```npm test```
 
 ### Deploy to Master
 ```npm run deploy```

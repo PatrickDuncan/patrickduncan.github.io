@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 
 import Content from './../../Content';
 
-const COLORS = Object.values(Content.colors["300"]);
+const COLORS = Object.keys(Content.colors["300"]).map(key => (
+  Content.colors["300"][key]
+));
 const COLORS_LENGTH = COLORS.length;
 
 class Polygon extends Component {

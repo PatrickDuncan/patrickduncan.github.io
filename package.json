@@ -24,6 +24,8 @@
     "child_process": "^1.0.2",
     "css-loader": "0.28.4",
     "dotenv": "4.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "3.19.0",
     "eslint-config-react-app": "^1.0.5",
     "eslint-loader": "1.7.1",
@@ -44,7 +46,8 @@
     "prop-types": "^15.5.10",
     "react-dev-utils": "^3.0.2",
     "react-error-overlay": "^1.0.9",
-    "rimraf": "^2.6.2",
+    "react-scripts": "^1.0.17",
+    "react-test-renderer": "^16.2.0",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.3",
     "url-loader": "0.5.9",
@@ -57,7 +60,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "deploy": "node scripts/deploy.js",
+    "beforeDeploy": "node scripts/beforeDeploy.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
@@ -90,7 +93,8 @@
       "json",
       "web.jsx",
       "jsx"
-    ]
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js"
   },
   "babel": {
     "presets": [
