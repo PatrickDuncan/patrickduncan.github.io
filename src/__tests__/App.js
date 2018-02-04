@@ -1,7 +1,6 @@
 import React from 'react';
 import { expect } from 'chai';
-import { shallow } from 'enzyme';
-import sinon from 'sinon';
+import { mount, shallow } from 'enzyme';
 
 import App from './../App';
 import Header from './../components/common/Header';
@@ -57,4 +56,12 @@ describe('<App />', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find(Header)).to.have.length(5);
   });
+
+  it('only contains img elements with an alt tag', () => {
+    const wrapper = mount(<App />);
+    // Must get(0) outside the check function
+    const images = wrapper.find('img').map(i => i.get(0));
+    const altCheck = image => !image.props.hasOwnProperty('alt');
+    expect(images.some(altCheck)).equal(false);
+  })
 });
