@@ -2,10 +2,10 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import Header from './../components/common/Header';
+import Education from './../components/Education';
 
-describe('<Header />', () => {
+describe('<Education />', () => {
   it('renders without crashing', () => {
-    mount(<Header color="#000" text="Test" />);
+    mount(<Education backgroundColor="#000" />);
   });
 });

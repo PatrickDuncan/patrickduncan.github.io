@@ -2,10 +2,10 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import Header from './../components/common/Header';
+import Navbar from './../components/Navbar';
 
-describe('<Header />', () => {
+describe('<Navbar />', () => {
   it('renders without crashing', () => {
-    mount(<Header color="#000" text="Test" />);
+    mount(<Navbar index={0} />);
   });
 });
