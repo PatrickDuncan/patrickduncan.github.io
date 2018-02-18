@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 
-import Selection from './../components/common/Selection';
+import Selection from './../../components/common/Selection';
 
 describe('<Selection />', () => {
   it('renders without crashing', () => {

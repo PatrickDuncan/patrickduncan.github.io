@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 
-import About from './../components/About';
+import About from './../../components/About';
 
 describe('<About />', () => {
   it('renders without crashing', () => {
