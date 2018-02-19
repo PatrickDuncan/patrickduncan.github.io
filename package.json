@@ -3,6 +3,9 @@
   "homepage": "http://patrickduncan.co",
   "private": true,
   "dependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "prop-types": "^15.5.10",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-icons": "^2.2.5",
@@ -14,7 +17,6 @@
   "devDependencies": {
     "autoprefixer": "7.1.1",
     "babel-core": "6.25.0",
-    "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.0.0",
     "babel-preset-react-app": "^3.1.1",
@@ -25,15 +27,12 @@
     "child_process": "^1.0.2",
     "css-loader": "0.28.4",
     "dotenv": "4.0.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "3.19.0",
-    "eslint-config-react-app": "^1.0.5",
-    "eslint-loader": "1.7.1",
-    "eslint-plugin-flowtype": "2.34.0",
-    "eslint-plugin-import": "2.2.0",
-    "eslint-plugin-jsx-a11y": "5.0.3",
-    "eslint-plugin-react": "7.1.0",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
     "extract-text-webpack-plugin": "2.1.2",
     "fbjs": "^0.8.16",
     "file-loader": "0.11.2",
@@ -44,7 +43,6 @@
     "postcss-flexbugs-fixes": "3.0.0",
     "postcss-loader": "2.0.6",
     "promise": "7.1.1",
-    "prop-types": "^15.5.10",
     "react-dev-utils": "^3.0.2",
     "react-error-overlay": "^1.0.9",
     "react-scripts": "^1.1.0",
@@ -62,7 +60,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "beforeDeploy": "node scripts/beforeDeploy.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "lint": "./node_modules/.bin/eslint src/**/**/**/**/*.js src/**/**/**/**/*.jsx"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -95,14 +94,11 @@
       "web.jsx",
       "jsx"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/src/scripts/setupTests.js"
   },
   "babel": {
     "presets": [
       "react-app"
     ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }

@@ -301,6 +301,10 @@
         "proficiency": 2.00
       }
     ],
+    "graphText": {
+      "description": "Bar graph showing my proficiency with programming languages",
+      "xLabel": "Language"
+    },
     "searchData": [
       "Appium",
       "Angular",

@@ -15,3 +15,6 @@
 
 ### Deploy to Master
 ```npm run deploy```
+
+### Run ESLint
+```npm run lint```
