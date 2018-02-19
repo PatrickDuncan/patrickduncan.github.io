@@ -4,6 +4,10 @@ import { mount } from 'enzyme';
 
 import Search from './../../components/Skills';
 
+const inputText = (wrapper, text) => {
+  wrapper.find('input').simulate('change', {target: {value: text}});
+}
+
 describe('<Search />', () => {
   it('renders without crashing', () => {
     mount(<Search backgroundColor="#000" />);
@@ -12,53 +16,56 @@ describe('<Search />', () => {
   it('accepts user input properly', () => {
     const wrapper = mount(<Search backgroundColor="#000" />);
     const text = "Java";
-    wrapper.find('input').simulate('change', {target: {value: text}});
+    inputText(wrapper, text);
     expect(wrapper.find('input').get(0).props.value).to.equal(text);
   });
 
   it('does not crash when inputting { or } and strips them away', () => {
     const wrapper = mount(<Search backgroundColor="#000" />);
-    wrapper.find('input').simulate('change', {target: {value: '{'}});
-    wrapper.find('input').simulate('change', {target: {value: '}'}});
+    inputText(wrapper, '{');
+    inputText(wrapper, '}');
     expect(wrapper.find('input').get(0).props.value).to.equal("");
   });
 
-  it('does not crash when inputting \ or / and strips them away', () => {
+  it('does not crash when inputting / or \\ and strips them away', () => {
     const wrapper = mount(<Search backgroundColor="#000" />);
-    wrapper.find('input').simulate('change', {target: {value: '\\'}});
-    wrapper.find('input').simulate('change', {target: {value: '/'}});
+    inputText(wrapper, '/');
+    inputText(wrapper, '\\');
     expect(wrapper.find('input').get(0).props.value).to.equal("");
   });
 
   it('does not crash when inputting [ or ] and strips them away', () => {
     const wrapper = mount(<Search backgroundColor="#000" />);
-    wrapper.find('input').simulate('change', {target: {value: '['}});
-    wrapper.find('input').simulate('change', {target: {value: ']'}});
+    inputText(wrapper, '[');
+    inputText(wrapper, ']');
     expect(wrapper.find('input').get(0).props.value).to.equal("");
   });
 
   it('does not crash when inputting ( or ) and strips them away', () => {
     const wrapper = mount(<Search backgroundColor="#000" />);
-    wrapper.find('input').simulate('change', {target: {value: '('}});
-    wrapper.find('input').simulate('change', {target: {value: ')'}});
+    inputText(wrapper, '(');
+    inputText(wrapper, ')');
     expect(wrapper.find('input').get(0).props.value).to.equal("");
   });
 
   it('does not crash when inputting | and strips it away', () => {
     const wrapper = mount(<Search backgroundColor="#000" />);
-    wrapper.find('input').simulate('change', {target: {value: '|'}});
+    inputText(wrapper, '|');
     expect(wrapper.find('input').get(0).props.value).to.equal("");
   });
 
   it('does not crash when inputting ? or . and strips them away', () => {
     const wrapper = mount(<Search backgroundColor="#000" />);
-    wrapper.find('input').simulate('change', {target: {value: '|'}});
+    inputText(wrapper, '?');
+    inputText(wrapper, '.');
     expect(wrapper.find('input').get(0).props.value).to.equal("");
   });
 
   it('does not crash when inputting +, ^, or * and strips them away', () => {
     const wrapper = mount(<Search backgroundColor="#000" />);
-    wrapper.find('input').simulate('change', {target: {value: '|'}});
+    inputText(wrapper, '+');
+    inputText(wrapper, '^');
+    inputText(wrapper, '*');
     expect(wrapper.find('input').get(0).props.value).to.equal("");
   });
 });
