@@ -45,8 +45,11 @@ class Projects extends Component {
     this.setState({ hover });
   }
 
-  changeSelected = selection => {
-    this.setState({ selection });
+  changeSelected = newSelection => {
+    const { selection } = this.state;
+    const selectionChange = selection === newSelection ? -1 : newSelection;
+
+    this.setState({ selection: selectionChange });
   }
 
   updateElementRef = ele => {

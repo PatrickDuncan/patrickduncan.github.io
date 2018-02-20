@@ -35,14 +35,6 @@ class Work extends Component {
         || !isEqual(this.state, nextState);
   }
 
-  changeHover = hover => {
-    this.setState({ hover });
-  }
-
-  changeSelected = selection => {
-    this.setState({ selection });
-  }
-
   scrollEvent = () => {
     const TOP = thisElement.getBoundingClientRect().top;
     if (TOP < 350 && TOP > 300 && this.props.canUpdateNav) {
@@ -50,6 +42,17 @@ class Work extends Component {
     } else if (TOP >= 350 && this.props.resetNav) {
       this.props.resetNav();
     }
+  }
+
+  changeHover = hover => {
+    this.setState({ hover });
+  }
+
+  changeSelected = newSelection => {
+    const { selection } = this.state;
+    const selectionChange = selection === newSelection ? -1 : newSelection;
+
+    this.setState({ selection: selectionChange });
   }
 
   updateElementRef = ele => {
