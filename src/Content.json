@@ -172,7 +172,8 @@
       "description": [
         "Worked on their Automation Framework that uses Ruby and Appium.",
         "Penned a wiki for the Framework which went over installation and use cases.",
-        "Reviewed resumes and conducted interviews at 3 different universities."
+        "Reviewed resumes and conducted interviews at 3 different universities.",
+        "Learned shell scripting by creating git hooks, utilizing Docker and creating a kiosk."
       ]
     },
     {
