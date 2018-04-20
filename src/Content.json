@@ -286,19 +286,19 @@
       },
       {
         "language": "CSS",
-        "proficiency": 4.50
+        "proficiency": 4.00
       },
       {
         "language": "C/C++",
-        "proficiency": 3.50
+        "proficiency": 3.00
       },
       {
         "language": "SQL",
-        "proficiency": 2.50
+        "proficiency": 2.00
       },
       {
         "language": "Python",
-        "proficiency": 2.00
+        "proficiency": 1.50
       }
     ],
     "graphText": {
@@ -314,7 +314,9 @@
       "C#",
       "CSS",
       "Databases",
+      "Docker",
       "ES6",
+      "Express",
       "Firebase",
       "GIMP",
       "Git",
@@ -329,6 +331,8 @@
       "Redux",
       "Ruby",
       "Ruby on Rails",
+      "Selenium",
+      "Shell Scripting",
       "SQL",
       "Source Tree",
       "svn",
