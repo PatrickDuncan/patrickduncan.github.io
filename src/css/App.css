@@ -45,10 +45,10 @@ body {
 }
 
 #scroll-nav {
-  bottom         : 0;
-  padding-bottom : 10px;
   position       : absolute;
-  max-height: 86px;
+  bottom         : 0;
+  max-height     : 86px;
+  padding-bottom : 10px;
 }
 
 /* --------------------------------- Classes --------------------------------- */
@@ -282,7 +282,8 @@ body {
 
 /* --------------------------------- Desktop --------------------------------- */
 
-@media (min-width: 768px) {
+@media
+  (min-width : 768px) {
   #mobile-navbar {
     display : none;
   }
@@ -306,7 +307,8 @@ body {
   }
 }
 
-@media (min-width: 512px) {
+@media
+  (min-width : 512px) {
   .about-paragraph {
     width : 60%;
   }
@@ -314,7 +316,8 @@ body {
 
 /* --------------------------------- Mobile --------------------------------- */
 
-@media (max-width: 768px) {
+@media
+  (max-width : 768px) {
   #desktop-navbar {
     display : none;
   }
@@ -337,7 +340,8 @@ body {
   }
 }
 
-@media (max-width: 512px) {
+@media
+  (max-width : 512px) {
   .selection-scroll {
     width      : 350px;
     overflow-x : scroll;
@@ -348,7 +352,8 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media
+  (max-width : 400px) {
   .selection-scroll {
     width      : 300px;
     overflow-x : scroll;
@@ -356,6 +361,10 @@ body {
 
   .selection-content-container-image {
     max-width : 250px;
+  }
+
+  .line-height-30 {
+    line-height : 30px;
   }
 }
 
