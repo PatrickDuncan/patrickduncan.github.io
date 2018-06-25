@@ -50,6 +50,7 @@ const MobileIconList = ({ backgroundColor, height }) => {
                 width: i === 0 ? '100%' : '50%',
               }}
               target="__blank"
+              rel="noreferrer noopener"
             >
               <div
                 className="center padding-l-10 padding-r-10"

@@ -41,6 +41,7 @@ const getLinkArray = info => (
       href={link.link}
       key={link.text}
       target="_blank"
+      rel="noreferrer noopener"
     >
       { link.text === 'Google Play'
       ? <GooglePlayLink />

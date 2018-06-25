@@ -32,6 +32,7 @@ const Desktop = () => (
             color: COLORS['50'].grey,
           }}
           target="__blank"
+          rel="noreferrer noopener"
         >
           <svg height="32px" width="32px" style={{ paddingTop: '5px' }}>
             <circle
