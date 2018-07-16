@@ -173,12 +173,6 @@ body {
   margin     : -23px 0px 0px -24.5px;
 }
 
-.logo-svg-twitter {
-  min-width  : 22px;
-  min-height : 22px;
-  margin     : -22px 0px 0px -27px;
-}
-
 .logo-svg-git {
   min-width  : 30px;
   min-height : 30px;
@@ -326,6 +320,10 @@ body {
     width : 100%;
   }
 
+  .hamburger {
+    padding-top: 5px;
+  }
+
   .move-graph-up {
     margin-top : -20px;
   }
@@ -342,6 +340,10 @@ body {
 
 @media
   (max-width : 512px) {
+  .hamburger {
+    padding-top: 7px;
+  }
+
   .selection-scroll {
     width      : 350px;
     overflow-x : scroll;

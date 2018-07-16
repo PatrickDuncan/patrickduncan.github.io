@@ -4,12 +4,10 @@ import EmailLogo from 'react-icons/lib/md/email';
 import GitLogo from 'react-icons/lib/fa/github';
 import LinkedinLogo from 'react-icons/lib/fa/linkedin';
 import MusicLogo from 'react-icons/lib/ti/notes';
-import TwitterLogo from 'react-icons/lib/ti/social-twitter';
 
 import Content from './../../Content.json';
 
 const LOGOS = [
-  <TwitterLogo className="logo-svg-twitter" />,
   <MusicLogo className="logo-svg-music" />,
   <LinkedinLogo className="logo-svg-linkedin" />,
   <GitLogo className="logo-svg-git" />,
@@ -34,7 +32,7 @@ const MobileIconList = ({ backgroundColor, height }) => {
           overflow: 'hidden',
         }}
       >
-        {[3, 4, 2, 1, 0].map((num, i) => {
+        {[2, 3, 1, 0].map(num => {
           const dark = COLORS[LINKS[num].dark][LINKS[num].color];
           const light = COLORS[LINKS[num].light][LINKS[num].color];
 
@@ -47,7 +45,7 @@ const MobileIconList = ({ backgroundColor, height }) => {
                 backgroundColor: light,
                 height: '44px',
                 overflow: 'hidden',
-                width: i === 0 ? '100%' : '50%',
+                width: '50%',
               }}
               target="__blank"
               rel="noreferrer noopener"

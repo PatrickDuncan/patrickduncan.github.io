@@ -127,13 +127,6 @@
   "Navbar": {
     "links": [
       {
-        "link": "https://twitter.com/patrickdduncan",
-        "text": "My Twitter",
-        "color": "blue",
-        "light": "200",
-        "dark": "500"
-      },
-      {
         "link": "https://musescore.com/arbitraryturtle",
         "text": "My Compositions",
         "color": "blue_grey",

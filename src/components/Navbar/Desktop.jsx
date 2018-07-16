@@ -3,12 +3,10 @@ import EmailLogo from 'react-icons/lib/md/email';
 import GitLogo from 'react-icons/lib/fa/github';
 import LinkedinLogo from 'react-icons/lib/fa/linkedin';
 import MusicLogo from 'react-icons/lib/ti/notes';
-import TwitterLogo from 'react-icons/lib/ti/social-twitter';
 
 import Content from './../../Content.json';
 
 const LOGOS = [
-  <TwitterLogo className="logo-svg-twitter" />,
   <MusicLogo className="logo-svg-music" />,
   <LinkedinLogo className="logo-svg-linkedin" />,
   <GitLogo className="logo-svg-git" />,
