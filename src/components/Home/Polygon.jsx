@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 import Content from './../../Content.json';
 
-const COLORS = Object.keys(Content.colors['300']).map(key => (
-  Content.colors['300'][key]
+const COLORS = Object.keys(Content.colors['200']).map(key => (
+  Content.colors['200'][key]
 ));
 const COLORS_LENGTH = COLORS.length;
 

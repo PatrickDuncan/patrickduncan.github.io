@@ -11,7 +11,7 @@ const ScrollDiamond = () => (
     <Scrollchor to="#Content">
       <svg
         className="no-select"
-        fill={Content.colors['300'].deep_orange}
+        fill={Content.colors['200'].cyan}
         height={`${HEIGHT}px`}
         width={`${WIDTH}px`}
       >

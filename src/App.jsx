@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Header from './components/common/Header';
 import Navbar from './components/Navbar';
@@ -13,65 +13,32 @@ import './css/App.css';
 import './css/hover.css';
 import Content from './Content.json';
 
-const COLORS = Content.colors['200'];
+const BG_COLORS = Content.colors['50'];
+const HEADER_COLORS = Content.colors['100'];
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      navIndex: 0,
-    };
-  }
+const App = () => (
+  <div>
+    <Navbar />
+    <Home />
+    <div style={{ position: 'absolute', marginTop: '-45px' }}>
+      <div id="Content" />
+    </div>
 
-  updateNav(navIndex) {
-    this.setState({ navIndex });
-  }
+    <Header text="Work" color={HEADER_COLORS.yellow} />
+    <Work backgroundColor={BG_COLORS.cyan} />
 
-  render() {
-    const { navIndex } = this.state;
+    <Header text="Projects" color={HEADER_COLORS.orange} />
+    <Projects backgroundColor={BG_COLORS.cyan} />
 
-    return (
-      <div>
-        <Navbar index={navIndex} />
-        <Home />
-        <div style={{ position: 'absolute', marginTop: '-45px' }}>
-          <div id="Content" />
-        </div>
-        <Header text="Work" color={COLORS.cyan} />
-        <Work
-          backgroundColor={COLORS.cyan}
-          canUpdateNav={navIndex !== 1}
-          canResetNav={navIndex !== 0}
-          resetNav={this.updateNav.bind(this, 0)}
-          updateNav={this.updateNav.bind(this, 1)}
-        />
-        <Header text="Projects" color={COLORS.green} />
-        <Projects
-          backgroundColor={COLORS.green}
-          canUpdateNav={navIndex !== 2}
-          updateNav={this.updateNav.bind(this, 2)}
-        />
-        <Header text="Skills" color={COLORS.orange} />
-        <Skills
-          backgroundColor={COLORS.orange}
-          canUpdateNav={navIndex !== 3}
-          updateNav={this.updateNav.bind(this, 3)}
-        />
-        <Header text="Education" color={COLORS.blue} />
-        <Education
-          backgroundColor={COLORS.blue}
-          canUpdateNav={navIndex !== 4}
-          updateNav={this.updateNav.bind(this, 4)}
-        />
-        <Header text="About" color={COLORS.lime} />
-        <About
-          backgroundColor={COLORS.lime}
-          canUpdateNav={navIndex !== 5}
-          updateNav={this.updateNav.bind(this, 5)}
-        />
-      </div>
-    );
-  }
-}
+    <Header text="Skills" color={HEADER_COLORS.orange} />
+    <Skills backgroundColor={BG_COLORS.cyan} />
+
+    <Header text="Education" color={HEADER_COLORS.orange} />
+    <Education backgroundColor={BG_COLORS.cyan} />
+
+    <Header text="About" color={HEADER_COLORS.orange} />
+    <About backgroundColor={BG_COLORS.cyan} />
+  </div>
+);
 
 export default App;

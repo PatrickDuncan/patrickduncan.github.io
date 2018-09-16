@@ -6,20 +6,35 @@
       "green": "#E8F5E9",
       "grey": "#FAFAFA",
       "lime": "#F9FBE7",
-      "orange": "#FFF3E0"
+      "orange": "#FFF3E0",
+      "yellow": "#FFFDE7"
     },
     "100": {
       "cyan": "#B2EBF2",
-      "green": "#C8E6C9"
+      "green": "#C8E6C9",
+      "orange": "#FFE0B2",
+      "yellow": "#FFF9C4"
     },
     "200": {
+      "amber": "#FFE082",
       "blue": "#90CAF9",
       "blue_grey": "#B0BEC5",
+      "brown": "#BCAAA4",
       "cyan": "#80DEEA",
+      "deep_orange": "#FFAB91",
+      "deep_purple": "#B39DDB",
       "green": "#A5D6A7",
+      "grey": "#EEEEEE",
       "indigo": "#9FA8DA",
+      "light_blue": "#81D4FA",
+      "light_green": "#C5E1A5",
       "lime": "#E6EE9C",
-      "orange": "#FFCC80"
+      "orange": "#FFCC80",
+      "pink": "#F48FB1",
+      "purple": "#CE93D8",
+      "red": "#EF9A9A",
+      "teal": "#80CBC4",
+      "yellow": "#FFF59D"
     },
     "300": {
       "amber": "#FFD54F",
