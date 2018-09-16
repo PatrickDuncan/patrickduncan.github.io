@@ -27,7 +27,7 @@ const Education = ({ backgroundColor, panelColor }) => (
             { EDUCATION.teachingTitle }
           </div>
           {EDUCATION.teachingPositions.map(position => (
-            <div className="sm-text text-center">
+            <div className="sm-text text-center" key={position[0]}>
               { position[0] } ◆ { position[1] }
             </div>
           ))}

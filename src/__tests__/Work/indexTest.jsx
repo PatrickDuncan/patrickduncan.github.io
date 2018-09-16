@@ -7,10 +7,7 @@ import ProjectContent from './../../components/Work/ContentContainer';
 
 const getDefaultWrapper = () => mount(<Work
   backgroundColor="#000"
-  canUpdateNav
-  canResetNav
-  updateNav={() => {}}
-  resetNav={() => {}}
+  panelColor="#000"
 />);
 
 describe('<Work />', () => {

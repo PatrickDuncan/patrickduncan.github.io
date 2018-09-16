@@ -5,7 +5,9 @@ import { mount } from 'enzyme';
 import Projects from './../../components/Projects';
 import ContentContainer from './../../components/Projects/ContentContainer';
 
-const getDefaultWrapper = () => mount(<Projects backgroundColor="#000" canUpdateNav updateNav={() => {}} />);
+const getDefaultWrapper = () => mount((
+  <Projects backgroundColor="#000" panelColor="#000" />
+));
 
 describe('<Projects />', () => {
   it('renders without crashing', () => {

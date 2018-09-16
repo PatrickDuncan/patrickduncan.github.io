@@ -8,16 +8,16 @@ import Search from './../../components/Skills/Search';
 
 describe('<Skills />', () => {
   it('renders without crashing', () => {
-    mount(<Skills backgroundColor="#000" canUpdateNav updateNav={() => {}} />);
+    mount(<Skills backgroundColor="#000" panelColor="#000" />);
   });
 
   it('renders a skill graph', () => {
-    const wrapper = mount(<Skills backgroundColor="#000" canUpdateNav updateNav={() => {}} />);
+    const wrapper = mount(<Skills backgroundColor="#000" panelColor="#000" />);
     expect(wrapper.find(Graph)).to.have.length(1);
   });
 
   it('renders a search component', () => {
-    const wrapper = mount(<Skills backgroundColor="#000" canUpdateNav updateNav={() => {}} />);
+    const wrapper = mount(<Skills backgroundColor="#000" panelColor="#000" />);
     expect(wrapper.find(Search)).to.have.length(1);
   });
 });

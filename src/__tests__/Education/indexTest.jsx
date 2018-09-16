@@ -7,8 +7,7 @@ describe('<Education />', () => {
   it('renders without crashing', () => {
     mount(<Education
       backgroundColor="#000"
-      canUpdateNav
-      updateNav={() => {}}
+      panelColor="#000"
     />);
   });
 });

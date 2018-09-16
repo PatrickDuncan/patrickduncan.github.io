@@ -8,7 +8,9 @@ const inputText = (wrapper, text) => {
   wrapper.find('input').simulate('change', { target: { value: text } });
 };
 
-const getDefaultWrapper = () => mount(<Search backgroundColor="#000" canUpdateNav updateNav={() => {}} />);
+const getDefaultWrapper = () => mount((
+  <Search backgroundColor="#000" panelColor="#000" />
+));
 
 describe('<Search />', () => {
   it('renders without crashing', () => {
