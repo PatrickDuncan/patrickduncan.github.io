@@ -13,31 +13,47 @@ import './css/App.css';
 import './css/hover.css';
 import Content from './Content.json';
 
-const BG_COLORS = Content.colors['50'];
-const HEADER_COLORS = Content.colors['100'];
+const COLORS_50 = Content.colors['50'];
+const COLORS_100 = Content.colors['100'];
+const COLORS_300 = Content.colors['300'];
 
 const App = () => (
   <div>
-    <Navbar />
+    <Navbar backgroundColor={COLORS_300.cyan} />
     <Home />
     <div style={{ position: 'absolute', marginTop: '-45px' }}>
       <div id="Content" />
     </div>
 
-    <Header text="Work" color={HEADER_COLORS.yellow} />
-    <Work backgroundColor={BG_COLORS.cyan} />
+    <Header text="Work" color={COLORS_100.yellow} />
+    <Work
+      backgroundColor={COLORS_50.cyan}
+      panelColor={COLORS_50.yellow}
+    />
 
-    <Header text="Projects" color={HEADER_COLORS.orange} />
-    <Projects backgroundColor={BG_COLORS.cyan} />
+    <Header text="Projects" color={COLORS_100.orange} />
+    <Projects
+      backgroundColor={COLORS_50.cyan}
+      panelColor={COLORS_50.yellow}
+    />
 
-    <Header text="Skills" color={HEADER_COLORS.orange} />
-    <Skills backgroundColor={BG_COLORS.cyan} />
+    <Header text="Skills" color={COLORS_100.orange} />
+    <Skills
+      backgroundColor={COLORS_50.cyan}
+      panelColor={COLORS_50.yellow}
+    />
 
-    <Header text="Education" color={HEADER_COLORS.orange} />
-    <Education backgroundColor={BG_COLORS.cyan} />
+    <Header text="Education" color={COLORS_100.orange} />
+    <Education
+      backgroundColor={COLORS_50.cyan}
+      panelColor={COLORS_50.yellow}
+    />
 
-    <Header text="About" color={HEADER_COLORS.orange} />
-    <About backgroundColor={BG_COLORS.cyan} />
+    <Header text="About" color={COLORS_100.orange} />
+    <About
+      backgroundColor={COLORS_50.cyan}
+      panelColor={COLORS_50.yellow}
+    />
   </div>
 );
 

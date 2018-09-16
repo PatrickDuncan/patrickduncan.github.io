@@ -1,13 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Desktop from './Desktop';
 import Mobile from './Mobile';
 
-import Content from './../../Content.json';
-
-const backgroundColor = Content.colors['200'].cyan;
-
-const Navbar = () => (
+const Navbar = ({ backgroundColor }) => (
   <div className="nav-height" id="Navbar" style={{ backgroundColor }}>
     <div className="center section-width">
       <Desktop />
@@ -15,5 +12,9 @@ const Navbar = () => (
     </div>
   </div>
 );
+
+Navbar.propTypes = {
+  backgroundColor: PropTypes.string.isRequired,
+};
 
 export default Navbar;

@@ -9,7 +9,6 @@ import AiroImg from './../../assets/airo.png';
 import BellImg from './../../assets/bell.png';
 import IngleImg from './../../assets/ingle.png';
 
-const BG_COLOUR = Content.colors['50'].yellow;
 const SELECTED_COLOUR = Content.colors['100'].yellow;
 
 class Work extends Component {
@@ -33,14 +32,14 @@ class Work extends Component {
   }
 
   render() {
-    const { backgroundColor } = this.props;
+    const { backgroundColor, panelColor } = this.props;
     const { hover, selection } = this.state;
 
     return (
       <div style={{ backgroundColor }}>
         <div className="section section-width">
           <Selection
-            backgroundColor={BG_COLOUR}
+            backgroundColor={panelColor}
             changeHover={this.changeHover}
             changeSelected={this.changeSelected}
             height="34px"
@@ -54,7 +53,7 @@ class Work extends Component {
             selection={selection}
           />
           <ContentContainer
-            backgroundColor={BG_COLOUR}
+            backgroundColor={panelColor}
             changeSelected={this.changeSelected}
             selection={selection}
           />
@@ -66,6 +65,7 @@ class Work extends Component {
 
 Work.propTypes = {
   backgroundColor: PropTypes.string.isRequired,
+  panelColor: PropTypes.string.isRequired,
 };
 
 export default Work;

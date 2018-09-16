@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 import Content from './../../Content.json';
 import ProfileImg from './../../assets/profile.jpg';
 
-const BG_COLOR = Content.colors['50'].yellow;
-
-const About = ({ backgroundColor }) => (
+const About = ({ backgroundColor, panelColor }) => (
   <div style={{ backgroundColor }}>
     <div className="section section-width">
       <div className="center no-select" style={{ marginBottom: '-25px' }}>
@@ -19,7 +17,7 @@ const About = ({ backgroundColor }) => (
       </div>
       <div
         className="xsm-text center about-paragraph"
-        style={{ backgroundColor: BG_COLOR }}
+        style={{ backgroundColor: panelColor }}
       >
         <div className="paper">
           {`"${Content.about}"`}
@@ -31,6 +29,7 @@ const About = ({ backgroundColor }) => (
 
 About.propTypes = {
   backgroundColor: PropTypes.string.isRequired,
+  panelColor: PropTypes.string.isRequired,
 };
 
 export default About;

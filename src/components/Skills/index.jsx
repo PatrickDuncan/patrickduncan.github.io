@@ -4,15 +4,11 @@ import PropTypes from 'prop-types';
 import Graph from './Graph';
 import Search from './Search';
 
-import Content from './../../Content.json';
-
-const BG_COLOUR = Content.colors['50'].yellow;
-
-const Skills = ({ backgroundColor }) => (
+const Skills = ({ backgroundColor, panelColor }) => (
   <div style={{ backgroundColor }}>
     <div className="section section-width">
       <div className="center">
-        <div className="paper" style={{ backgroundColor: BG_COLOUR }}>
+        <div className="paper" style={{ backgroundColor: panelColor }}>
           <div className="padding-l-30 move-graph-up">
             <Graph />
           </div>
@@ -27,6 +23,7 @@ const Skills = ({ backgroundColor }) => (
 
 Skills.propTypes = {
   backgroundColor: PropTypes.string.isRequired,
+  panelColor: PropTypes.string.isRequired,
 };
 
 export default Skills;
