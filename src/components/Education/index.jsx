@@ -23,9 +23,12 @@ const Education = ({ backgroundColor, panelColor }) => (
           <div className="md-text padding-b-20 text-center">
             { EDUCATION.gpa }
           </div>
+          <div className="md-text padding-b-5 text-center underline">
+            { EDUCATION.teachingTitle }
+          </div>
           {EDUCATION.teachingPositions.map(position => (
             <div className="sm-text text-center">
-              { position[0] } ◆ { position[1] } ◆ { position[2] }
+              { position[0] } ◆ { position[1] }
             </div>
           ))}
         </div>
