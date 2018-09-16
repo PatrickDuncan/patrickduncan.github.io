@@ -338,7 +338,10 @@
   "education": {
     "degree": "B.A.Sc Computer Science",
     "award": "Deans' Honour List",
-    "gpa": "GPA: 3.59 / 4.0"
+    "gpa": "GPA: 3.59 / 4.0",
+    "teachingPositions": [
+      ["Fall 2018", "Lab Teaching Assistant", "ENG 1D04"]
+    ]
   },
 
   "about": "I have always been passionate about technology, whether it be researching what computer parts to buy or freaking out about the latest phones, so I jumped at the opportunity to take a computer science course in high school. I ended up loving programming and the capacity it gives you to express your creativity, so I decided to pursue it in university. Through school work, side projects and work experience I have built up a solid software foundation, though I do believe learning is a  `while (true);` process."
