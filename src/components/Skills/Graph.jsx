@@ -3,7 +3,7 @@ import { VictoryAxis, VictoryBar, VictoryChart, VictoryTooltip } from 'victory';
 
 import Content from './../../Content.json';
 
-const BAR_COLOUR = Content.colors['300'].cyan;
+const BAR_COLOR = Content.colors['300'].cyan;
 const HEIGHT = 300;
 const WIDTH = 550;
 const LABEL_FONT_SIZE = 18;
@@ -28,7 +28,7 @@ const Graph = () => (
       }}
       data={Content.skills.graphData}
       labelComponent={<VictoryTooltip />}
-      style={{ data: { fill: BAR_COLOUR } }}
+      style={{ data: { fill: BAR_COLOR } }}
       x="language"
       y="proficiency"
     />

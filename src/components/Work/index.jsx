@@ -9,7 +9,7 @@ import AiroImg from './../../assets/airo.png';
 import BellImg from './../../assets/bell.png';
 import IngleImg from './../../assets/ingle.png';
 
-const SELECTED_COLOUR = Content.colors['100'].yellow;
+const SELECTED_COLOR = Content.colors['100'].yellow;
 
 class Work extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ class Work extends Component {
               { image: AiroImg, timeRange: Content.work[1].timeRange },
               { image: IngleImg, timeRange: Content.work[2].timeRange },
             ]}
-            selectedColor={SELECTED_COLOUR}
+            selectedColor={SELECTED_COLOR}
             selection={selection}
           />
           <ContentContainer

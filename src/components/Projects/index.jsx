@@ -9,7 +9,7 @@ import RomeImg from './../../assets/roman-fury.png';
 
 import Content from './../../Content.json';
 
-const SELECTED_COLOUR = Content.colors['100'].yellow;
+const SELECTED_COLOR = Content.colors['100'].yellow;
 
 class Projects extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ class Projects extends Component {
               { image: WtdImg, timeRange: Content.projects[1].timeRange },
               { image: RomeImg, timeRange: Content.projects[2].timeRange },
             ]}
-            selectedColor={SELECTED_COLOUR}
+            selectedColor={SELECTED_COLOR}
             selection={selection}
           />
           <ContentContainer
