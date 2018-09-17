@@ -210,9 +210,21 @@
 
   "projects": [
     {
+      "name": "Bash Shell Customizations",
+      "timeRange": "Jan - Sep 2018",
+      "description": "A light-weight tool that adds customizations to Bash shells. It adds aliases, completions, visual changes and fix nuisances. It works for Linux (tested on Ubuntu), macOS and Windows.",
+      "languages": "Bash",
+      "links": [
+        {
+          "link": "https://github.com/PatrickDuncan/bash_shell",
+          "text": "Github"
+        }
+      ]
+    },
+    {
       "name": "Soul Emission",
       "blurb": "2D Atmospheric Space Shooter",
-      "timeRange": "Jul 2015 - Sep 2015",
+      "timeRange": "Jul - Sep 2015",
       "description": "Soul Emission is a 2D atmospheric sci-fi shooter. The main goal of the game is to recover your body by transversing through your ship. The game features multiple ammunition types and unique enemies. I also created all the art in the game.",
       "languages": "C#",
       "tools": "Unity 5, GIMP",

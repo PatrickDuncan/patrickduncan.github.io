@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import ContentContainer from './ContentContainer';
 import Selection from './../common/Selection';
+import BashImg from './../../assets/bash-banner.png';
 import SoulImg from './../../assets/soul.png';
 import WtdImg from './../../assets/wtd.png';
 import RomeImg from './../../assets/roman-fury.png';
@@ -45,9 +46,10 @@ class Projects extends Component {
             height="62px"
             hover={hover}
             options={[
-              { image: SoulImg, timeRange: Content.projects[0].timeRange },
-              { image: WtdImg, timeRange: Content.projects[1].timeRange },
-              { image: RomeImg, timeRange: Content.projects[2].timeRange },
+              { image: BashImg, timeRange: Content.projects[0].timeRange },
+              { image: SoulImg, timeRange: Content.projects[1].timeRange },
+              { image: WtdImg, timeRange: Content.projects[2].timeRange },
+              { image: RomeImg, timeRange: Content.projects[3].timeRange },
             ]}
             selectedColor={SELECTED_COLOR}
             selection={selection}

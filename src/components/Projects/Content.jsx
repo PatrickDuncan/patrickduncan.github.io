@@ -55,9 +55,11 @@ const ProjectContent = ({ info }) => (
     <div className="xlg-text underline">
       { info.name }
     </div>
-    <div className="lg-text padding-t-20">
-      { info.blurb }
-    </div>
+    { info.blub ?
+      <div className="lg-text padding-t-20">
+        { info.blurb }
+      </div>
+    : null }
     <div className="sm-text padding-t-5">
       { info.timeRange }
     </div>
@@ -68,18 +70,22 @@ const ProjectContent = ({ info }) => (
       <span className="bold">Languages: </span>
       { info.languages }
     </div>
-    <div className="xsm-text">
-      <span className="bold">Tools: </span>
-      { info.tools }
-    </div>
+    { info.tools ?
+      <div className="xsm-text">
+        <span className="bold">Tools: </span>
+        { info.tools }
+      </div>
+    : null }
     <div className="center sm-text padding-t-10">
       { getLinkArray(info) }
     </div>
-    <img
-      alt="project"
-      className="padding-t-20 selection-content-container-image"
-      src={getImage(info.image)}
-    />
+    { info.image ?
+      <img
+        alt="project"
+        className="padding-t-20 selection-content-container-image"
+        src={getImage(info.image)}
+      />
+    : null}
   </div>
 );
 
