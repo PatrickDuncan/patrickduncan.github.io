@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Content from './../../Content.json';
 
-const LANGUAGE_BG_COLOR = Content.colors['900'].orange;
+const backgroundColor = Content.colors['300'].cyan;
 
 class Search extends Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class Search extends Component {
               >
                 <div
                   className="language-search-box"
-                  style={{ backgroundColor: LANGUAGE_BG_COLOR }}
+                  style={{ backgroundColor }}
                 >
                   { language }
                 </div>
