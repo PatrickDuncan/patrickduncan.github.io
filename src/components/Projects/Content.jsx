@@ -1,10 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import GooglePlayImg from './../../assets/google-play-badge.png';
-import SoulGameplayImg from './../../assets/soul-pic.png';
-import RomanGameplayImg from './../../assets/roman.png';
-import WtdScreenImg from './../../assets/wtd-screen.png';
+import GooglePlayImg from './../../assets/misc/google-play-logo.png';
+import RomanFury from './../../assets/showcases/roman-fury.png';
+import SoulEmission from './../../assets/showcases/soul-emission.png';
+import WhatToDo from './../../assets/showcases/what-to-do.png';
+
+const IMAGES = {
+  romanFury: RomanFury,
+  soulEmission: SoulEmission,
+  whatToDo: WhatToDo,
+};
 
 const GooglePlayLink = () => (
   <img
@@ -20,19 +26,6 @@ const LinkText = ({ text }) => (
     { text }
   </div>
 );
-
-const getImage = image => {
-  switch (image) {
-    case 'soul-pic':
-      return SoulGameplayImg;
-    case 'wtd-screen':
-      return WtdScreenImg;
-    case 'roman':
-      return RomanGameplayImg;
-    default:
-      return null;
-  }
-};
 
 const getLinkArray = info => (
   info.links.map(link => (
@@ -79,11 +72,11 @@ const ProjectContent = ({ info }) => (
     <div className="center sm-text padding-t-10">
       { getLinkArray(info) }
     </div>
-    { info.image ?
+    { IMAGES[info.image] ?
       <img
         alt="project"
         className="padding-t-20 selection-content-container-image"
-        src={getImage(info.image)}
+        src={IMAGES[info.image]}
       />
     : null}
   </div>

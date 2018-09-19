@@ -6,7 +6,7 @@ import Navbar from './../../components/Navbar';
 import Desktop from './../../components/Navbar/Desktop';
 import Mobile from './../../components/Navbar/Mobile';
 
-const getDefaultWrapper = () => mount(<Navbar index={0} />);
+const getDefaultWrapper = () => mount(<Navbar backgroundColor="#000" />);
 
 describe('<Navbar />', () => {
   it('renders without crashing', () => {

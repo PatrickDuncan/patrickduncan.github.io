@@ -3,12 +3,19 @@ import PropTypes from 'prop-types';
 
 import ContentContainer from './ContentContainer';
 import Selection from './../common/Selection';
-import BashImg from './../../assets/bash-banner.png';
-import SoulImg from './../../assets/soul.png';
-import WtdImg from './../../assets/wtd.png';
-import RomeImg from './../../assets/roman-fury.png';
 
 import Content from './../../Content.json';
+import Bash from './../../assets/banners/bash.png';
+import RomanFury from './../../assets/banners/roman-fury.png';
+import SoulEmission from './../../assets/banners/soul-emission.png';
+import WhatToDo from './../../assets/banners/what-to-do.png';
+
+const IMAGES = {
+  bash: Bash,
+  romanFury: RomanFury,
+  soulEmission: SoulEmission,
+  whatToDo: WhatToDo,
+};
 
 const SELECTED_COLOR = Content.colors['100'].yellow;
 
@@ -28,7 +35,6 @@ class Projects extends Component {
   changeSelected = newSelection => {
     const { selection } = this.state;
     const selectionChange = selection === newSelection ? -1 : newSelection;
-
     this.setState({ selection: selectionChange });
   }
 
@@ -45,12 +51,10 @@ class Projects extends Component {
             changeSelected={this.changeSelected}
             height="62px"
             hover={hover}
-            options={[
-              { image: BashImg, timeRange: Content.projects[0].timeRange },
-              { image: SoulImg, timeRange: Content.projects[1].timeRange },
-              { image: WtdImg, timeRange: Content.projects[2].timeRange },
-              { image: RomeImg, timeRange: Content.projects[3].timeRange },
-            ]}
+            options={Content.projects.map(project => ({
+              image: IMAGES[project.image],
+              timeRange: project.timeRange,
+            }))}
             selectedColor={SELECTED_COLOR}
             selection={selection}
           />

@@ -182,7 +182,8 @@
         "Penned a wiki for the Framework which went over installation and use cases.",
         "Reviewed resumes and conducted interviews at 3 different universities.",
         "Learned shell scripting by creating git hooks, utilizing Docker and creating a kiosk."
-      ]
+      ],
+      "image": "bell"
     },
     {
       "company": "Airo Health",
@@ -193,7 +194,8 @@
         "Designed their database schema for messaging, permissions and user info.",
         "Implemented the messaging on the dashboard and React Native app.",
         "Worked heavily with Amazon Web Services and Firebase."
-      ]
+      ],
+      "image": "airo"
     },
     {
       "company": "Ingle International",
@@ -204,7 +206,8 @@
         "Reconfigured their AngularJS powered product to use the new version of their API.",
         "Wrote tests and fixed bugs for multiple products.",
         "Worked on their app for the last two weeks."
-      ]
+      ],
+      "image": "ingle"
     }
   ],
 
@@ -219,7 +222,8 @@
           "link": "https://github.com/PatrickDuncan/bash_shell",
           "text": "Github"
         }
-      ]
+      ],
+      "image": "bash"
     },
     {
       "name": "Soul Emission",
@@ -242,7 +246,7 @@
           "text": "Features Video"
         }
       ],
-      "image": "soul-pic"
+      "image": "soulEmission"
     },
     {
       "name": "What to Do",
@@ -261,7 +265,7 @@
           "text": "Google Play"
         }
       ],
-      "image": "wtd-screen"
+      "image": "whatToDo"
     },
     {
       "name": "Roman Fury",
@@ -280,7 +284,7 @@
           "text": "Gameplay Video"
         }
       ],
-      "image": "roman"
+      "image": "romanFury"
     }
   ],
 
