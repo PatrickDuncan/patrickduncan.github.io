@@ -7,6 +7,7 @@ import Selection from './../common/Selection';
 import Content from './../../Content.json';
 import Bash from './../../assets/banners/bash.png';
 import RomanFury from './../../assets/banners/roman-fury.png';
+import Shunc from './../../assets/banners/shunc.png';
 import SoulEmission from './../../assets/banners/soul-emission.png';
 import WhatToDo from './../../assets/banners/what-to-do.png';
 
@@ -14,6 +15,7 @@ const IMAGES = {
   bash: Bash,
   romanFury: RomanFury,
   soulEmission: SoulEmission,
+  shunc: Shunc,
   whatToDo: WhatToDo,
 };
 
