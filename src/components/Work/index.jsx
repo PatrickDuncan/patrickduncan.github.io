@@ -5,10 +5,15 @@ import ContentContainer from './ContentContainer';
 import Selection from './../common/Selection';
 
 import Content from './../../Content.json';
-import AiroImg from './../../assets/airo.png';
-import BellImg from './../../assets/bell.png';
-import IngleImg from './../../assets/ingle.png';
+import Airo from './../../assets/banners/airo.png';
+import Bell from './../../assets/banners/bell.png';
+import Ingle from './../../assets/banners/ingle.png';
 
+const IMAGES = {
+  airo: Airo,
+  bell: Bell,
+  ingle: Ingle,
+};
 const SELECTED_COLOR = Content.colors['100'].yellow;
 
 class Work extends Component {
@@ -44,11 +49,10 @@ class Work extends Component {
             changeSelected={this.changeSelected}
             height="34px"
             hover={hover}
-            options={[
-              { image: BellImg, timeRange: Content.work[0].timeRange },
-              { image: AiroImg, timeRange: Content.work[1].timeRange },
-              { image: IngleImg, timeRange: Content.work[2].timeRange },
-            ]}
+            options={Content.work.map(work => ({
+              image: IMAGES[work.image],
+              timeRange: work.timeRange,
+            }))}
             selectedColor={SELECTED_COLOR}
             selection={selection}
           />
