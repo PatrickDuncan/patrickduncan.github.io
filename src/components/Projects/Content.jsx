@@ -48,7 +48,7 @@ const ProjectContent = ({ info }) => (
     <div className="xlg-text underline">
       { info.name }
     </div>
-    { info.blub ?
+    { info.blurb ?
       <div className="lg-text padding-t-20">
         { info.blurb }
       </div>
@@ -85,7 +85,6 @@ const ProjectContent = ({ info }) => (
 ProjectContent.propTypes = {
   info: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    blurb: PropTypes.string.isRequired,
     timeRange: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     languages: PropTypes.string.isRequired,
