@@ -235,7 +235,7 @@
       "timeRange": "Jan - Sep 2018",
       "description": "A light-weight tool that adds customizations to Bash shells. It adds aliases, completions, visual changes and fix nuisances. It works for Linux (tested on Ubuntu), macOS and Windows.",
       "languages": "Bash",
-      "tools": "ShellCheck, shUnit2, TravisCI",
+      "tools": "ShellCheck, TravisCI",
       "links": [
         {
           "link": "https://github.com/PatrickDuncan/bash_shell",
