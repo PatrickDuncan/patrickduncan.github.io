@@ -9,8 +9,9 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import About from './components/About';
 
-import './css/App.css';
+import './css/normalize.css';
 import './css/hover.css';
+import './css/App.css';
 import Content from './Content.json';
 
 const COLORS_50 = Content.colors['50'];
