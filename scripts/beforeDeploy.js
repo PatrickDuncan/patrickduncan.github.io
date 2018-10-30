@@ -16,6 +16,6 @@ const getDirectoryContents = () => {
 }
 
 if (getDirectoryContents().indexOf('build') > -1) {
-  shell('echo "patrickduncan.co" >> CNAME');
+  shell('echo "patrickdduncan.com" >> CNAME');
   shell('mv CNAME build');
 }
