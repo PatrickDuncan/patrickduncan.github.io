@@ -191,8 +191,8 @@
       "position": "Software Engineer",
       "timeRange": "May - Jul 2017",
       "description": [
-        "Built their dashboard from the ground up with React and Redux.",
-        "Designed their database schema for messaging, permissions and user info.",
+        "Built a dashboard from the ground up with React and Redux. It was a component of their pitches after only 2 weeks.",
+        "Designed a database schema for messaging, permissions and user info.",
         "Implemented the messaging on the dashboard and React Native app.",
         "Worked heavily with Amazon Web Services and Firebase."
       ],
@@ -203,10 +203,10 @@
       "position": "User Experience Engineer",
       "timeRange": "May - Aug 2016",
       "description": [
-        "Created their new Content Management System for one of their major products with React and Redux.",
-        "Reconfigured their AngularJS powered product to use the new version of their API.",
+        "Created a new Content Management System for a major product with React and Redux.",
+        "Reconfigured an AngularJS powered product to use the new API version.",
         "Wrote tests and fixed bugs for multiple products.",
-        "Worked on their app for the last two weeks."
+        "Worked on a React Native app for the last two weeks."
       ],
       "image": "ingle"
     }
