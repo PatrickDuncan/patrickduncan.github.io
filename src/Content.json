@@ -178,10 +178,11 @@
       "position": "Application and Service Development",
       "timeRange": "Aug 2017 - Aug 2018",
       "description": [
-        "Worked on their Automation Framework that uses Ruby and Appium.",
-        "Penned a wiki for the Framework which went over installation and use cases.",
-        "Reviewed resumes and conducted interviews at 3 different universities.",
-        "Learned shell scripting by creating git hooks, utilizing Docker and creating a kiosk."
+        "Worked on core features for an Automation Framework that uses Ruby and Appium.",
+        "Managed and developed new server infrastructure by setting up Linux servers, utilizing Docker and onboarding team members.",
+        "Penned a 10+ paged wiki for the Framework which detailed installation, development and use cases.",
+        "Reviewed over 100 resumes and conducted interviews at 3 different universities.",
+        "Learned shell scripting by creating git hooks and a marketing kiosk."
       ],
       "image": "bell"
     },
