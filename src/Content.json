@@ -180,7 +180,7 @@
       "description": [
         "Worked on core features for an Automation Framework that uses Ruby, Appium, and Selenium.",
         "Managed and developed new server infrastructure by setting up Linux servers, utilizing Docker and on-boarding team members.",
-        "Penned a 10+ paged wiki for the Framework which detailed installation, development and use cases.",
+        "Penned a 15+ paged wiki for the Framework which detailed installation, development, and use cases.",
         "Reviewed over 100 resumes and conducted interviews at 3 different universities.",
         "Learned shell scripting by creating git hooks and a marketing kiosk."
       ],
@@ -234,7 +234,7 @@
     {
       "name": "Bash Shell Customizations",
       "timeRange": "Jan - Sep 2018",
-      "description": "A light-weight tool that adds customizations to Bash shells. It adds aliases, completions, visual changes and fix nuisances. It works for Linux (tested on Ubuntu), macOS and Windows.",
+      "description": "A light-weight tool that adds customizations to Bash shells. It adds aliases, completions, visual changes and fixes nuisances. It works for Linux (tested on Ubuntu), macOS and Windows.",
       "languages": "Bash",
       "tools": "ShellCheck, TravisCI",
       "links": [
@@ -394,5 +394,5 @@
     ]
   },
 
-  "about": "As a child, I was always fascinated by technology, so when the opportunity to take a \"Computer Science\" course arose in high-school I enrolled in it immediately. I loved coding and decided to pursue a degree in Computer Science. By doing well in my courses at McMaster, developing a plethora of side projects (check my GitHub!) and working in the industry I've developed a robust, yet flexible skill set. I enjoy working anywhere in the stack and I understand and preach the importance of clarity and consistency."
+  "about": "As a child, I was always fascinated by technology, so when the opportunity to take a \"Computer Science\" course arose in high-school I enrolled in it immediately. I loved coding and decided to pursue a degree in Computer Science. By doing well in my courses at McMaster, developing a plethora of side projects, and working in the industry I've developed a robust, yet flexible skill set. I enjoy working anywhere in the stack and I understand and preach the importance of clarity and consistency."
 }
