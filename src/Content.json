@@ -179,7 +179,7 @@
       "timeRange": "Aug 2017 - Aug 2018",
       "description": [
         "Worked on core features for an Automation Framework that uses Ruby, Appium, and Selenium.",
-        "Managed and developed new server infrastructure by setting up Linux servers, utilizing Docker and onboarding team members.",
+        "Managed and developed new server infrastructure by setting up Linux servers, utilizing Docker and on-boarding team members.",
         "Penned a 10+ paged wiki for the Framework which detailed installation, development and use cases.",
         "Reviewed over 100 resumes and conducted interviews at 3 different universities.",
         "Learned shell scripting by creating git hooks and a marketing kiosk."
@@ -394,5 +394,5 @@
     ]
   },
 
-  "about": "I have always been passionate about technology, whether it be researching what computer parts to buy or freaking out about the latest phones, so I jumped at the opportunity to take a computer science course in high school. I ended up loving programming and the capacity it gives you to express your creativity, so I decided to pursue it in university. Through school work, side projects and work experience I have built up a solid software foundation, though I do believe learning is a  `while (true);` process."
+  "about": "As a child, I was always fascinated by technology, so when the opportunity to take a \"Computer Science\" course arose in high-school I enrolled in it immediately. I loved coding and decided to pursue a degree in Computer Science. By doing well in my courses at McMaster, developing a plethora of side projects (check my GitHub!) and working in the industry I've developed a robust, yet flexible skill set. I enjoy working anywhere in the stack and I understand and preach the importance of clarity and consistency."
 }
