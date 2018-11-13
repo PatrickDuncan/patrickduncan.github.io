@@ -20,7 +20,7 @@ const About = ({ backgroundColor, panelColor }) => (
         style={{ backgroundColor: panelColor }}
       >
         <div className="paper">
-          {`"${Content.about}"`}
+          {`${Content.about}`}
         </div>
       </div>
     </div>
