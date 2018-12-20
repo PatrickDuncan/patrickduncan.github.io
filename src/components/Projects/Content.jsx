@@ -56,7 +56,7 @@ const ProjectContent = ({ info }) => (
     <div className="sm-text padding-t-5">
       { info.timeRange }
     </div>
-    <div className="text-left xsm-text padding-t-12">
+    <div className="justify xsm-text padding-t-12">
       { info.description }
     </div>
     <div className="xsm-text padding-t-10">

@@ -24,7 +24,9 @@ const WorkContent = ({ info }) => (
                 ◆
               </div>
               <div className="pull-left selection-content-item">
-                { item }
+                <div className="justify">
+                  { item }
+                </div>
               </div>
             </div>
           </div>

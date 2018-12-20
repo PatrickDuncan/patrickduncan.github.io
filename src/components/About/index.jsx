@@ -19,7 +19,7 @@ const About = ({ backgroundColor, panelColor }) => (
         className="xsm-text center about-paragraph"
         style={{ backgroundColor: panelColor }}
       >
-        <div className="paper">
+        <div className="justify paper">
           {`${Content.about}`}
         </div>
       </div>

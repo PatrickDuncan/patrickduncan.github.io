@@ -271,7 +271,8 @@ div {
 }
 
 .justify {
-  text-align: justify;
+  text-align  : justify;
+  text-justify: inter-word;
 }
 /* -------------------------------- Desktop --------------------------------- */
 @media (min-width : 768px) {
