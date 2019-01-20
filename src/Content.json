@@ -189,7 +189,7 @@
     {
       "company": "Airo Health",
       "position": "Software Engineer",
-      "timeRange": "May - Jul 2017",
+      "timeRange": "May - July 2017",
       "description": [
         "Built a dashboard from the ground up with React and Redux. It was a component of their pitches after only 2 weeks.",
         "Designed a database schema for messaging, permissions and user info.",
@@ -214,8 +214,22 @@
 
   "projects": [
     {
+      "name": "Cleansio",
+      "timeRange": "Sept 2018 - Ongoing",
+      "description": "Capstone project that aims to censor music in real-time. We achieved censoring explicit words from any audio format.\n\nI led a team of four and orchestrated an agile project management system on GitHub. I also decreased total execution time by 400% by using Thread Pools.",
+      "languages": "Python",
+      "tools": "Google Cloud Speech, PyDub, TravisCI",
+      "links": [
+        {
+          "link": "https://github.com/PatrickDuncan/cleansio",
+          "text": "Github"
+        }
+      ],
+      "image": "cleansio"
+    },
+    {
       "name": "Shunc",
-      "timeRange": "Aug 2018 - Present",
+      "timeRange": "Aug - Nov 2018",
       "description": "The goal of this library is to make shell scripting easier for everyone. Your shell of preference should not matter.\n\nOnce you source the script you will expose a plethora of useful functions like length and substring. The functions behave like what you would expect from popular languages such as JavaScript. Each function is heavily unit tested and documented.",
       "languages": "Sh",
       "tools": "ShellCheck, shUnit2, TravisCI",
@@ -233,7 +247,7 @@
     },
     {
       "name": "Bash Shell Customizations",
-      "timeRange": "Jan - Sep 2018",
+      "timeRange": "Jan - Sept 2018",
       "description": "A light-weight tool that adds customizations to Bash shells. It adds aliases, completions, visual changes and fixes nuisances. It works for Linux (tested on Ubuntu), macOS and Windows.",
       "languages": "Bash",
       "tools": "ShellCheck, TravisCI",
@@ -248,7 +262,7 @@
     {
       "name": "Soul Emission",
       "blurb": "2D Atmospheric Space Shooter",
-      "timeRange": "Jul - Sep 2015",
+      "timeRange": "July - Sept 2015",
       "description": "Soul Emission is a 2D atmospheric sci-fi shooter. The main goal of the game is to recover your body by transversing through your ship. The game features multiple ammunition types and unique enemies. I also created all the art in the game.",
       "languages": "C#",
       "tools": "Unity 5, GIMP",
