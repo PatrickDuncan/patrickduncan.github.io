@@ -178,11 +178,12 @@
       "position": "Application and Service Development",
       "timeRange": "Aug 2017 - Aug 2018",
       "description": [
-        "Worked on core features for an Automation Framework that uses Ruby, Appium, and Selenium.",
-        "Managed and developed new server infrastructure by setting up Linux servers, utilizing Docker and on-boarding team members.",
-        "Penned a 15+ paged wiki for the Framework which detailed installation, development, and use cases.",
-        "Reviewed over 100 resumes and conducted interviews at 3 different universities.",
-        "Learned shell scripting by creating git hooks and a marketing kiosk."
+        "Implemented the ability to control multiple devices concurrently for an automation framework that used Ruby.",
+        "Initiated production and development pipelines by setting up Linux servers and creating Docker images.",
+        "Developed a command-line tool that drastically improved the usability of the framework for developers and clients.",
+        "Created a live dashboard using Bash which was integral in marketing to various groups across Bell.",
+        "Contributed to the open source Appium Docker initiative by adding a custom config feature and fixing their build issues.",
+        "Reviewed over 100 resumes and conducted interviews at 3 different universities."
       ],
       "image": "bell"
     },
