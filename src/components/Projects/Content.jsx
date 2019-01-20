@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import GooglePlayImg from './../../assets/misc/google-play-logo.png';
-import RomanFury from './../../assets/showcases/roman-fury.png';
-import SoulEmission from './../../assets/showcases/soul-emission.png';
+import RomanFury from './../../assets/showcases/roman-fury.gif';
+import SoulEmission from './../../assets/showcases/soul-emission.gif';
 import WhatToDo from './../../assets/showcases/what-to-do.png';
 
 const IMAGES = {
