@@ -11,8 +11,11 @@ const Education = ({ backgroundColor, panelColor }) => (
     <div className="section section-width">
       <div className="center">
         <div style={{ backgroundColor: panelColor }} className="paper">
-          <div className="xlg-text padding-b-20 text-center line-height-30">
+          <div className="xlg-text padding-b-10 text-center line-height-30">
             { EDUCATION.degree }
+          </div>
+          <div className="lg-text padding-b-20 text-center">
+            { EDUCATION.time }
           </div>
           <div className="padding-b-10 text-center no-select">
             <img src={McMasterImg} height={80} alt="mac" />
