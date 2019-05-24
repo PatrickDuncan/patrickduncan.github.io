@@ -29,9 +29,9 @@ class DiamondSvg extends Component {
   }
 
   reAnimate = () => {
+    const { reanimate } = this.state;
     reanimating = true;
-
-    this.setState({ reanimate: !this.state.reanimate });
+    this.setState({ reanimate: !reanimate });
   }
 
   render() {

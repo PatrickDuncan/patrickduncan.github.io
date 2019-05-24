@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { MdEmail } from 'react-icons/md';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { TiNotes } from 'react-icons/ti';
 
 import Content from '../../Content.json';

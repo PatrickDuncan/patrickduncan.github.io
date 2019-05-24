@@ -1,6 +1,6 @@
 {
-  "name": "new_web",
-  "version": "0.1.0",
+  "name": "personal_website",
+  "homepage": "http://patrickduncan.co",
   "private": true,
   "dependencies": {
     "@babel/core": "7.4.3",
