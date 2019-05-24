@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.4.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@svgr/webpack": "4.1.0",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
@@ -143,9 +144,8 @@
     "presets": [
       "react-app"
     ],
-    "plugins": ["transform-object-rest-spread"]
-  },
-  "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+    "plugins": [
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
   }
 }
