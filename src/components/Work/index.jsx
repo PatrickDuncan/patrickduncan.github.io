@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import ContentContainer from './ContentContainer';
-import Selection from './../common/Selection';
+import Selection from '../common/Selection';
 
-import Content from './../../Content.json';
-import Airo from './../../assets/banners/airo.png';
-import Bell from './../../assets/banners/bell.png';
-import Ingle from './../../assets/banners/ingle.png';
+import Content from '../../Content.json';
+import Airo from '../../assets/banners/airo.png';
+import Bell from '../../assets/banners/bell.png';
+import Ingle from '../../assets/banners/ingle.png';
 
 const IMAGES = {
   airo: Airo,
