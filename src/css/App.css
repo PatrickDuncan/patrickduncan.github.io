@@ -158,27 +158,31 @@ div {
 }
 
 .logo-svg-email {
-  min-width : 18px;
-  min-height: 18px;
-  margin    : -22px 0 0 -25px;
+  min-width     : 18px;
+  min-height    : 18px;
+  margin-left   : -25px;
+  padding-bottom: 6px;
 }
 
 .logo-svg-linkedin {
-  min-width : 18px;
-  min-height: 18px;
-  margin    : -23px 0 0 -24.5px;
+  min-width     : 17px;
+  min-height    : 17px;
+  margin-left   : -24px;
+  padding-bottom: 6.5px;
 }
 
 .logo-svg-git {
-  min-width : 30px;
-  min-height: 30px;
-  margin    : -23px 0 0 -31px;
+  min-width     : 26px;
+  min-height    : 26px;
+  margin-left   : -29px;
+  padding-bottom: 3px;
 }
 
 .logo-svg-music {
-  min-width : 21px;
-  min-height: 21px;
-  margin    : -22px 0 0 -26px;
+  min-width     : 21px;
+  min-height    : 21px;
+  margin-left   : -27px;
+  padding-bottom: 5px;
 }
 
 .inline-block {

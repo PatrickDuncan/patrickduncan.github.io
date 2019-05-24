@@ -1,16 +1,16 @@
 import React from 'react';
-import EmailLogo from 'react-icons/lib/md/email';
-import GitLogo from 'react-icons/lib/fa/github';
-import LinkedinLogo from 'react-icons/lib/fa/linkedin';
-import MusicLogo from 'react-icons/lib/ti/notes';
+import { MdEmail } from 'react-icons/md';
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { TiNotes } from 'react-icons/ti';
 
 import Content from './../../Content.json';
 
 const LOGOS = [
-  <MusicLogo className="logo-svg-music" />,
-  <LinkedinLogo className="logo-svg-linkedin" />,
-  <GitLogo className="logo-svg-git" />,
-  <EmailLogo className="logo-svg-email" />,
+  <TiNotes className="logo-svg-music" />,
+  <FaLinkedinIn className="logo-svg-linkedin" />,
+  <FaGithub className="logo-svg-git" />,
+  <MdEmail className="logo-svg-email" />,
 ];
 const LINKS = Content.Navbar.links;
 const COLORS = Content.colors;

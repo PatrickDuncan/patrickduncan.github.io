@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Motion, spring } from 'react-motion';
 import PropTypes from 'prop-types';
-import BarsLogo from 'react-icons/lib/md/dehaze';
+import { MdDehaze } from 'react-icons/md';
 
 import MobileIconList from './MobileIconList';
 
@@ -30,7 +30,7 @@ class Mobile extends Component {
           role="button"
           style={{ fontSize: '26px' }}
         >
-          <BarsLogo />
+          <MdDehaze />
         </div>
         <Motion
           style={{
