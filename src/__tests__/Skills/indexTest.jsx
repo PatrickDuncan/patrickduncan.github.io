@@ -2,9 +2,9 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import Skills from './../../components/Skills';
-import Graph from './../../components/Skills/Graph';
-import Search from './../../components/Skills/Search';
+import Skills from '../../components/Skills';
+import Graph from '../../components/Skills/Graph';
+import Search from '../../components/Skills/Search';
 
 describe('<Skills />', () => {
   it('renders without crashing', () => {

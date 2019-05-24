@@ -1,7 +1,7 @@
 import React from 'react';
 import Scrollchor from 'react-scrollchor';
 
-import Content from './../../Content.json';
+import Content from '../../Content.json';
 
 const HEIGHT = 26;
 const WIDTH = 40;

@@ -2,9 +2,9 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 
-import Home from './../../components/Home';
-import ScrollDiamond from './../../components/Home/ScrollDiamond';
-import DiamondSvg from './../../components/Home/DiamondSvg';
+import Home from '../../components/Home';
+import ScrollDiamond from '../../components/Home/ScrollDiamond';
+import DiamondSvg from '../../components/Home/DiamondSvg';
 
 describe('<Home />', () => {
   it('renders without crashing', () => {

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import GooglePlayImg from './../../assets/misc/google-play-logo.png';
-import RomanFury from './../../assets/showcases/roman-fury.gif';
-import SoulEmission from './../../assets/showcases/soul-emission.gif';
-import WhatToDo from './../../assets/showcases/what-to-do.png';
+import GooglePlayImg from '../../assets/misc/google-play-logo.png';
+import RomanFury from '../../assets/showcases/roman-fury.gif';
+import SoulEmission from '../../assets/showcases/soul-emission.gif';
+import WhatToDo from '../../assets/showcases/what-to-do.png';
 
 const IMAGES = {
   romanFury: RomanFury,
@@ -37,8 +37,8 @@ const getLinkArray = info => (
       rel="noreferrer noopener"
     >
       { link.text === 'Google Play'
-      ? <GooglePlayLink />
-      : <LinkText text={link.text} /> }
+        ? <GooglePlayLink />
+        : <LinkText text={link.text} /> }
     </a>
   ))
 );
@@ -48,11 +48,13 @@ const ProjectContent = ({ info }) => (
     <div className="xlg-text underline">
       { info.name }
     </div>
-    { info.blurb ?
-      <div className="lg-text padding-t-20">
-        { info.blurb }
-      </div>
-    : null }
+    { info.blurb
+      ? (
+        <div className="lg-text padding-t-20">
+          { info.blurb }
+        </div>
+      )
+      : null }
     <div className="sm-text padding-t-5">
       { info.timeRange }
     </div>
@@ -63,22 +65,26 @@ const ProjectContent = ({ info }) => (
       <span className="bold">Languages: </span>
       { info.languages }
     </div>
-    { info.tools ?
-      <div className="xsm-text">
-        <span className="bold">Tools: </span>
-        { info.tools }
-      </div>
-    : null }
+    { info.tools
+      ? (
+        <div className="xsm-text">
+          <span className="bold">Tools: </span>
+          { info.tools }
+        </div>
+      )
+      : null }
     <div className="center sm-text padding-t-10">
       { getLinkArray(info) }
     </div>
-    { IMAGES[info.image] ?
-      <img
-        alt="project"
-        className="padding-t-20 selection-content-container-image"
-        src={IMAGES[info.image]}
-      />
-    : null}
+    { IMAGES[info.image]
+      ? (
+        <img
+          alt="project"
+          className="padding-t-20 selection-content-container-image"
+          src={IMAGES[info.image]}
+        />
+      )
+      : null}
   </div>
 );
 

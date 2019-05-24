@@ -1,7 +1,9 @@
 import React from 'react';
-import { VictoryAxis, VictoryBar, VictoryChart, VictoryTooltip } from 'victory';
+import {
+  VictoryAxis, VictoryBar, VictoryChart, VictoryTooltip,
+} from 'victory';
 
-import Content from './../../Content.json';
+import Content from '../../Content.json';
 
 const BAR_COLOR = Content.colors['300'].cyan;
 const HEIGHT = 300;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Polygon from './../../components/Home/Polygon';
+import Polygon from '../../components/Home/Polygon';
 
 describe('<Polygon />', () => {
   it('renders without crashing', () => {

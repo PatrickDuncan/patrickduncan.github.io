@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Content from './../../Content.json';
+import Content from '../../Content.json';
 
 const backgroundColor = Content.colors['300'].cyan;
 

@@ -2,9 +2,9 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import Navbar from './../../components/Navbar';
-import Desktop from './../../components/Navbar/Desktop';
-import Mobile from './../../components/Navbar/Mobile';
+import Navbar from '../../components/Navbar';
+import Desktop from '../../components/Navbar/Desktop';
+import Mobile from '../../components/Navbar/Mobile';
 
 const getDefaultWrapper = () => mount(<Navbar backgroundColor="#000" />);
 

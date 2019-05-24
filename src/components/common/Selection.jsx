@@ -28,7 +28,7 @@ const Selection = ({
                 <div
                   className={
                     `selection-option pull-left text-center ${
-                     i < options.length - 1 ? 'border-right' : ''}`
+                      i < options.length - 1 ? 'border-right' : ''}`
                   }
                   key={option.timeRange}
                   onClick={() => { changeSelected(i); }}
@@ -38,8 +38,8 @@ const Selection = ({
                   role="button"
                   style={
                     selection === i || hover === i
-                    ? { backgroundColor: selectedColor }
-                    : {}}
+                      ? { backgroundColor: selectedColor }
+                      : {}}
                 >
                   <img src={option.image} alt="logo" style={{ height }} />
                   <div className="padding-t-5 selection-date-text">

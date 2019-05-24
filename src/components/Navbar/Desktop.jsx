@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { TiNotes } from 'react-icons/ti';
 
-import Content from './../../Content.json';
+import Content from '../../Content.json';
 
 const LOGOS = [
   <TiNotes className="logo-svg-music" />,

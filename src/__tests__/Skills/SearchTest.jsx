@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import Search from './../../components/Skills';
+import Search from '../../components/Skills';
 
 const inputText = (wrapper, text) => {
   wrapper.find('input').simulate('change', { target: { value: text } });

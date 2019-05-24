@@ -2,8 +2,8 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import Projects from './../../components/Projects';
-import ContentContainer from './../../components/Projects/ContentContainer';
+import Projects from '../../components/Projects';
+import ContentContainer from '../../components/Projects/ContentContainer';
 
 const getDefaultWrapper = () => mount((
   <Projects backgroundColor="#000" panelColor="#000" />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import Education from './../../components/Education';
+import Education from '../../components/Education';
 
 describe('<Education />', () => {
   it('renders without crashing', () => {
