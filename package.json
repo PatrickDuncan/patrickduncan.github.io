@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.4.3",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@svgr/webpack": "4.1.0",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
@@ -13,7 +12,6 @@
     "babel-loader": "8.0.5",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^9.0.0",
-    "babel-preset-stage-3": "^6.24.1",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "chai": "^4.2.0",
@@ -143,9 +141,6 @@
   "babel": {
     "presets": [
       "react-app"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-object-rest-spread"
     ]
   }
 }
