@@ -2,8 +2,8 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 
-import DiamondSvg from './../../components/Home/DiamondSvg';
-import RotatingDiamonds from './../../components/Home/RotatingDiamonds';
+import DiamondSvg from '../../components/Home/DiamondSvg';
+import RotatingDiamonds from '../../components/Home/RotatingDiamonds';
 
 describe('<DiamondSvg />', () => {
   it('renders without crashing', () => {

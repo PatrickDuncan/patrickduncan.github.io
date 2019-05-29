@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Polygon from './Polygon';
 import RotatingDiamonds from './RotatingDiamonds';
 
-import Content from './../../Content.json';
+import Content from '../../Content.json';
 
 const SIZE1 = 750;
 const SIZE2 = 850;
@@ -29,9 +29,9 @@ class DiamondSvg extends Component {
   }
 
   reAnimate = () => {
+    const { reanimate } = this.state;
     reanimating = true;
-
-    this.setState({ reanimate: !this.state.reanimate });
+    this.setState({ reanimate: !reanimate });
   }
 
   render() {

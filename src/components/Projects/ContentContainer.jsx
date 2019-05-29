@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import ContentComponent from './Content';
 
-import Content from './../../Content.json';
+import Content from '../../Content.json';
 
 const MOTION_PARAMS = { stiffness: 100, dampling: 30 };
 

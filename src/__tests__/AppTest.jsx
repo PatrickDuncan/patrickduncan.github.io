@@ -2,15 +2,15 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount, shallow } from 'enzyme';
 
-import App from './../App';
-import Header from './../components/common/Header';
-import Navbar from './../components/Navbar';
-import Home from './../components/Home';
-import Work from './../components/Work';
-import Projects from './../components/Projects';
-import Skills from './../components/Skills';
-import Education from './../components/Education';
-import About from './../components/About';
+import App from '../App';
+import Header from '../components/common/Header';
+import Navbar from '../components/Navbar';
+import Home from '../components/Home';
+import Work from '../components/Work';
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
+import Education from '../components/Education';
+import About from '../components/About';
 
 describe('<App />', () => {
   it('renders without crashing', () => {

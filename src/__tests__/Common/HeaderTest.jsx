@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import Header from './../../components/common/Header';
+import Header from '../../components/common/Header';
 
 describe('<Header />', () => {
   it('renders without crashing', () => {

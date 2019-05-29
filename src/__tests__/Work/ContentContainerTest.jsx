@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import ContentContainer from './../../components/Work/ContentContainer';
+import ContentContainer from '../../components/Work/ContentContainer';
 
 describe('<ContentContainer />', () => {
   it('renders without crashing', () => {

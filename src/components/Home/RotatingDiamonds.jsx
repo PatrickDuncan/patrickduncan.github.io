@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Content from './../../Content.json';
+import Content from '../../Content.json';
 
 const ANIMATION_DURATION = '12s';
 const SPINNING_COLOR = Content.colors['200'].cyan;

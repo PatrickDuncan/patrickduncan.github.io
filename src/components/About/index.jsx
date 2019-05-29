@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Content from './../../Content.json';
-import ProfileImg from './../../assets/misc/profile.jpg';
+import Content from '../../Content.json';
+import ProfileImg from '../../assets/misc/profile.jpg';
 
 const About = ({ backgroundColor, panelColor }) => (
   <div style={{ backgroundColor }}>
