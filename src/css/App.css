@@ -51,6 +51,14 @@ div {
   max-height    : 86px;
   padding-bottom: 10px;
 }
+
+#gpa-text {
+  opacity: 0;
+}
+
+#gpa-text:hover {
+  opacity: 1;
+}
 /* -------------------------------- Classes --------------------------------- */
 .circle {
   border-radius: 100px;

@@ -20,6 +20,13 @@ const Education = ({ backgroundColor, panelColor }) => (
           <div className="padding-b-10 text-center no-select">
             <img src={McMasterImg} height={80} alt="mac" />
           </div>
+          <div className="lg-text padding-b-10 text-center">
+            { EDUCATION.award }
+          </div>
+          <div className="md-text padding-b-20 text-center">
+            { EDUCATION.gpa[0] }
+            <span id="gpa-text" className="hand">{ EDUCATION.gpa[1] }</span>
+          </div>
           <div className="md-text padding-b-5 text-center underline">
             { EDUCATION.teachingTitle }
           </div>

@@ -404,6 +404,11 @@
   "education": {
     "degree": "B.A.Sc Computer Science",
     "time": "2014 - 2019",
+    "award": "Deans' Honour List",
+    "gpa": [
+      "GPA:",
+      " 3.7"
+    ],
     "teachingTitle": "Lab Teaching Assistant",
     "teachingPositions": [
       ["Fall 2018", "ENG 1D04"]
