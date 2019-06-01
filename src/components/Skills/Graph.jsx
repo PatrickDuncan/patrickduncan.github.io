@@ -11,6 +11,8 @@ const WIDTH = 550;
 const LABEL_FONT_SIZE = 18;
 const TICK_FONT_SIZE = 14;
 
+const dataSort = (a, b) => b.proficiency - a.proficiency;
+
 const Graph = () => (
   <VictoryChart
     desc={Content.skills.graphText.description}
@@ -28,7 +30,7 @@ const Graph = () => (
         easing: 'bounce',
         onLoad: { duration: 500 },
       }}
-      data={Content.skills.graphData}
+      data={Content.skills.graphData.sort(dataSort)}
       labelComponent={<VictoryTooltip />}
       style={{ data: { fill: BAR_COLOR } }}
       x="language"
@@ -43,7 +45,7 @@ const Graph = () => (
     />
     <VictoryAxis
       dependentAxis
-      domain={[0, 6]}
+      domain={[0, 5]}
       padding={{ bottom: 100 }}
       style={{
         axisLabel: { fontSize: LABEL_FONT_SIZE, padding: 37, paddingBottom: 300 },

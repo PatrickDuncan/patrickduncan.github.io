@@ -174,6 +174,15 @@
 
   "work": [
     {
+      "company": "IBM",
+      "position": "Full Stack Developer",
+      "timeRange": "May 2019 - Present",
+      "description": [
+        "IBM Cloud and Cognitive Software"
+      ],
+      "image": "ibm"
+    },
+    {
       "company": "Bell Mobility",
       "position": "Application and Service Development",
       "timeRange": "Aug 2017 - Aug 2018",
@@ -216,7 +225,7 @@
   "projects": [
     {
       "name": "Cleansio",
-      "timeRange": "Sept 2018 - Ongoing",
+      "timeRange": "Sept 2018 - Apr 2019",
       "description": "Capstone project that aims to censor music in real-time. We achieved censoring explicit words from any audio format.\n\nI led a team of four and orchestrated an agile project management system on GitHub. I also decreased total execution time by 400% by using Thread Pools.",
       "languages": "Python",
       "tools": "Google Cloud Speech, PyDub, TravisCI",
@@ -326,23 +335,23 @@
   "skills": {
     "graphData": [{
         "language": "JavaScript",
-        "proficiency": 5.30
+        "proficiency": 4.00
       },
       {
         "language": "React",
-        "proficiency": 5.30
+        "proficiency": 3.50
       },
       {
         "language": "Ruby",
-        "proficiency": 5.00
+        "proficiency": 3.70
       },
       {
-        "language": "Redux",
-        "proficiency": 4.60
+        "language": "Docker",
+        "proficiency": 3.50
       },
       {
         "language": "Java",
-        "proficiency": 4.50
+        "proficiency": 2.00
       },
       {
         "language": "CSS",
@@ -350,15 +359,11 @@
       },
       {
         "language": "C/C++",
-        "proficiency": 3.00
-      },
-      {
-        "language": "SQL",
         "proficiency": 2.00
       },
       {
         "language": "Python",
-        "proficiency": 1.50
+        "proficiency": 4.30
       }
     ],
     "graphText": {
@@ -375,6 +380,7 @@
       "CSS",
       "Databases",
       "Docker",
+      "Elixir",
       "ES6",
       "Express",
       "Firebase",
@@ -397,6 +403,7 @@
       "Source Tree",
       "svn",
       "Unity",
+      "Web Assembly",
       "webpack"
     ]
   },

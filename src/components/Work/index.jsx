@@ -7,11 +7,13 @@ import Selection from '../common/Selection';
 import Content from '../../Content.json';
 import Airo from '../../assets/banners/airo.png';
 import Bell from '../../assets/banners/bell.png';
+import Ibm from '../../assets/banners/ibm.png';
 import Ingle from '../../assets/banners/ingle.png';
 
 const IMAGES = {
   airo: Airo,
   bell: Bell,
+  ibm: Ibm,
   ingle: Ingle,
 };
 const SELECTED_COLOR = Content.colors['100'].yellow;
