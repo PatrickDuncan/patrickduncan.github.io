@@ -74,7 +74,7 @@
     "build": "node scripts/build.js",
     "beforeDeploy": "node scripts/beforeDeploy.js",
     "test": "node scripts/test.js --env=jsdom",
-    "lint": "./node_modules/.bin/eslint src/*.js* src/*/*.js* src/*/*/*.js*"
+    "lint": "npx eslint src/*.js* src/*/*.js* src/*/*/*.js*"
   },
   "eslintConfig": {
     "extends": "react-app"
