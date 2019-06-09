@@ -3,8 +3,8 @@ env:
   node: true
 extends: airbnb
 globals:
-  describe: false
-  it: false
+  describe: readonly
+  it: readonly
 parser: babel-eslint
 rules:
   arrow-parens: [error, as-needed]
