@@ -11,7 +11,7 @@ const inputText = (wrapper, text) => {
 const getDefaultWrapper = () => mount((
   <Search
     setDisplayTech={null}
-    technologies={{'Expert': ['Java', 'JS']}}
+    technologies={{ Expert: ['Java', 'JS'] }}
     backgroundColor="#000"
     panelColor="#000"
   />
