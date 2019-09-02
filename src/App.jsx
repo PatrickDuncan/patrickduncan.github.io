@@ -5,14 +5,14 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Work from './components/Work';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
+import Technologies from './components/Technologies';
 import Education from './components/Education';
 import About from './components/About';
 
 import './css/normalize.css';
 import './css/hover.css';
 import './css/App.css';
-import Content from './Content.json';
+import Content from './data/content.json';
 
 const COLORS_50 = Content.colors['50'];
 const COLORS_100 = Content.colors['100'];
@@ -38,8 +38,8 @@ const App = () => (
       panelColor={COLORS_50.yellow}
     />
 
-    <Header text="Skills" color={COLORS_100.orange} />
-    <Skills
+    <Header text="Technologies" color={COLORS_100.orange} />
+    <Technologies
       backgroundColor={COLORS_50.cyan}
       panelColor={COLORS_50.yellow}
     />

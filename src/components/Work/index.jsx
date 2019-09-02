@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ContentContainer from './ContentContainer';
 import Selection from '../common/Selection';
 
-import Content from '../../Content.json';
+import Content from '../../data/content.json';
 import Airo from '../../assets/banners/airo.png';
 import Bell from '../../assets/banners/bell.png';
 import Ibm from '../../assets/banners/ibm.png';

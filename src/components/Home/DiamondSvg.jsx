@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Polygon from './Polygon';
 import RotatingDiamonds from './RotatingDiamonds';
 
-import Content from '../../Content.json';
+import Content from '../../data/content.json';
 
 const SIZE1 = 750;
 const SIZE2 = 850;

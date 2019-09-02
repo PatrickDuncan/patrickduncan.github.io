@@ -3,7 +3,7 @@ import { MdEmail } from 'react-icons/md';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { TiNotes } from 'react-icons/ti';
 
-import Content from '../../Content.json';
+import Content from '../../data/content.json';
 
 const LOGOS = [
   <TiNotes className="logo-svg-music" />,
@@ -15,7 +15,7 @@ const LINKS = Content.Navbar.links;
 const COLORS = Content.colors;
 
 const Desktop = () => (
-  <div id="desktop-navbar" className="nav-height inline-block">
+  <div id="desktop-navbar" className="nav-height full-inline-block">
     {LINKS.map((data, i) => (
       <div
         className="nav-height padding-l-10 pull-right hvr-float"

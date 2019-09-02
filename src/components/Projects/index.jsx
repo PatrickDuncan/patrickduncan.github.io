@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ContentContainer from './ContentContainer';
 import Selection from '../common/Selection';
 
-import Content from '../../Content.json';
+import Content from '../../data/content.json';
 import Bash from '../../assets/banners/bash.png';
 import Cleansio from '../../assets/banners/cleansio.png';
 import RomanFury from '../../assets/banners/roman-fury.png';

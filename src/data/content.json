@@ -57,12 +57,20 @@
       "teal": "#4DB6AC",
       "yellow": "#FFF176"
     },
+    "400": {
+      "cyan": "#26C6DA"
+    },
     "500": {
       "blue": "#2196F3",
       "blue_grey": "#546E7A",
+      "cyan": "#00BCD4",
       "indigo": "#3F51B5"
     },
+    "600": {
+      "cyan": "#00ACC1"
+    },
     "700": {
+      "cyan": "#00838F",
       "green": "#388E3C"
     },
     "900": {
@@ -331,82 +339,6 @@
       "image": "romanFury"
     }
   ],
-
-  "skills": {
-    "graphData": [{
-        "language": "JavaScript",
-        "proficiency": 4.00
-      },
-      {
-        "language": "React",
-        "proficiency": 3.50
-      },
-      {
-        "language": "Ruby",
-        "proficiency": 3.70
-      },
-      {
-        "language": "Docker",
-        "proficiency": 3.50
-      },
-      {
-        "language": "Java",
-        "proficiency": 2.00
-      },
-      {
-        "language": "CSS",
-        "proficiency": 4.00
-      },
-      {
-        "language": "C/C++",
-        "proficiency": 2.00
-      },
-      {
-        "language": "Python",
-        "proficiency": 4.30
-      }
-    ],
-    "graphText": {
-      "description": "Bar graph showing my proficiency with programming languages",
-      "xLabel": "Language"
-    },
-    "searchData": [
-      "Appium",
-      "Angular",
-      "Amazon Web Services",
-      "Assembly",
-      "C++",
-      "C#",
-      "CSS",
-      "Databases",
-      "Docker",
-      "Elixir",
-      "ES6",
-      "Express",
-      "Firebase",
-      "GIMP",
-      "Git",
-      "HTML",
-      "Java",
-      "JavaScript",
-      "Mautic",
-      "npm",
-      "Python",
-      "React",
-      "React Native",
-      "Redux",
-      "Ruby",
-      "Ruby on Rails",
-      "Selenium",
-      "Shell Scripting",
-      "SQL",
-      "Source Tree",
-      "svn",
-      "Unity",
-      "Web Assembly",
-      "webpack"
-    ]
-  },
 
   "education": {
     "degree": "B.A.Sc Computer Science",

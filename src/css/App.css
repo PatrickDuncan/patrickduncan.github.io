@@ -149,15 +149,16 @@ div {
   cursor: default;
 }
 
-.language-search-box-container {
+.inline-block {
   display: inline-block;
 }
 
-.language-search-box {
+.tech-list-item {
   float        : left;
   padding      : 7px 10px;
-  border-radius: 10px;
-  font-size    : 13px;
+  border-radius: 12px;
+  border: #00BCD4 1px solid;
+  font-size    : 14px;
 }
 
 .nav-height {
@@ -193,7 +194,7 @@ div {
   padding-bottom: 5px;
 }
 
-.inline-block {
+.full-inline-block {
   display   : inline-block;
   width     : 100%;
   min-height: 1px;
@@ -287,10 +288,6 @@ div {
     display: none;
   }
 
-  .move-graph-up {
-    margin-top: -40px;
-  }
-
   .section-width {
     width: 76%;
   }
@@ -306,7 +303,7 @@ div {
   }
 }
 @media (min-width : 512px) {
-  .about-paragraph {
+  .desktop-width-60 {
     width: 60%;
   }
 }
@@ -324,10 +321,6 @@ div {
     padding-top: 5px;
   }
 
-  .move-graph-up {
-    margin-top: -20px;
-  }
-
   .section-width {
     width: 90%;
   }
@@ -338,6 +331,10 @@ div {
   }
 }
 @media (max-width : 512px) {
+  .full-mobile-width {
+    min-width: 100%;
+  }
+
   .hamburger {
     padding-top: 7px;
   }

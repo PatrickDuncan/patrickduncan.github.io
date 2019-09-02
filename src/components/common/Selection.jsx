@@ -17,7 +17,7 @@ const Selection = ({
 }) => (
   <Motion style={{ top: spring(selection > -1 ? 0 : TOP, MOTION_PARAMS) }}>
     {({ top }) => (
-      <div className="inline-block">
+      <div className="full-inline-block">
         <div
           className="selection-container center hand box-shadow"
           style={{ backgroundColor, top }}
