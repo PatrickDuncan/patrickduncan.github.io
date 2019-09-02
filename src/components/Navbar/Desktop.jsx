@@ -15,7 +15,7 @@ const LINKS = Content.Navbar.links;
 const COLORS = Content.colors;
 
 const Desktop = () => (
-  <div id="desktop-navbar" className="nav-height inline-block">
+  <div id="desktop-navbar" className="nav-height full-inline-block">
     {LINKS.map((data, i) => (
       <div
         className="nav-height padding-l-10 pull-right hvr-float"

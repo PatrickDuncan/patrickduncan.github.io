@@ -9,7 +9,7 @@ parser: babel-eslint
 rules:
   arrow-parens: [error, as-needed]
   jsx-a11y/interactive-supports-focus: [ignore] # focus highlight looks ugly
-  react/forbid-prop-types: [error, forbid: [any, object]]
+  react/forbid-prop-types: [error, forbid: [any]]
   react/jsx-no-bind: [ignore]
   react/jsx-one-expression-per-line: [ignore]
   react/no-did-update-set-state: [warning, always] # airbnb/javascript iss. #659

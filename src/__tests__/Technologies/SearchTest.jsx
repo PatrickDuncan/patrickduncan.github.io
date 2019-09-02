@@ -2,14 +2,19 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import Search from '../../components/Skills';
+import Search from '../../components/Technologies';
 
 const inputText = (wrapper, text) => {
   wrapper.find('input').simulate('change', { target: { value: text } });
 };
 
 const getDefaultWrapper = () => mount((
-  <Search backgroundColor="#000" panelColor="#000" />
+  <Search
+    setDisplayTech={null}
+    technologies={{'Expert': ['Java', 'JS']}}
+    backgroundColor="#000"
+    panelColor="#000"
+  />
 ));
 
 describe('<Search />', () => {

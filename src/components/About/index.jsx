@@ -16,7 +16,7 @@ const About = ({ backgroundColor, panelColor }) => (
         />
       </div>
       <div
-        className="xsm-text center about-paragraph"
+        className="xsm-text center desktop-width-60"
         style={{ backgroundColor: panelColor }}
       >
         <div className="paper">

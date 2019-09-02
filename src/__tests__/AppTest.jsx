@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 import Home from '../components/Home';
 import Work from '../components/Work';
 import Projects from '../components/Projects';
-import Skills from '../components/Skills';
+import Technologies from '../components/Technologies';
 import Education from '../components/Education';
 import About from '../components/About';
 
@@ -32,9 +32,9 @@ describe('<App />', () => {
     expect(wrapper.find(Projects)).to.have.length(1);
   });
 
-  it('renders the skills section', () => {
+  it('renders the technologies section', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.find(Skills)).to.have.length(1);
+    expect(wrapper.find(Technologies)).to.have.length(1);
   });
 
   it('renders the education section', () => {

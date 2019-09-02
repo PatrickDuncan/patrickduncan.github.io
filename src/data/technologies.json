@@ -1,0 +1,36 @@
+{
+  "Expert": [
+    "JavaScript",
+    "CSS",
+    "Docker",
+    "Git",
+    "HTML",
+    "Python",
+    "React",
+    "GIMP",
+    "Musescore"
+  ],
+  "Intermediate": [
+    "Appium",
+    "Groovy",
+    "Java",
+    "Redux",
+    "Ruby",
+    "Shell Scripting",
+    "Firebase",
+    "Shell scripting"
+  ],
+  "Working Knowledge": [
+    "Angular",
+    "Assembly",
+    "C/C++",
+    "C#",
+    "Elixir",
+    "Kubernetes",
+    "React Native",
+    "Selenium",
+    "SQL",
+    "Unity",
+    "Web Assembly"
+  ]
+}
