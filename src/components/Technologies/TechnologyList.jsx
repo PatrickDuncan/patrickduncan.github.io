@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Content from '../../Content.json';
+import Content from '../../data/content.json';
 
 const tierColours = [
   Content.colors['200'].cyan,

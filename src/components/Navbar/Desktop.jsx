@@ -3,7 +3,7 @@ import { MdEmail } from 'react-icons/md';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { TiNotes } from 'react-icons/ti';
 
-import Content from '../../Content.json';
+import Content from '../../data/content.json';
 
 const LOGOS = [
   <TiNotes className="logo-svg-music" />,

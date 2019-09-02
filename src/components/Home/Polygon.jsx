@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Motion, spring } from 'react-motion';
 import PropTypes from 'prop-types';
 
-import Content from '../../Content.json';
+import Content from '../../data/content.json';
 
 const COLORS = Object.keys(Content.colors['200']).map(key => (
   Content.colors['200'][key]

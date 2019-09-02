@@ -12,7 +12,7 @@ import About from './components/About';
 import './css/normalize.css';
 import './css/hover.css';
 import './css/App.css';
-import Content from './Content.json';
+import Content from './data/content.json';
 
 const COLORS_50 = Content.colors['50'];
 const COLORS_100 = Content.colors['100'];
