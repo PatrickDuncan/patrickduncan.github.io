@@ -79,7 +79,7 @@ const ProjectContent = ({ info }) => (
     { IMAGES[info.image]
       ? (
         <img
-          alt="project"
+          alt={info.name}
           className="padding-t-20 selection-content-container-image"
           src={IMAGES[info.image]}
         />

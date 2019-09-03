@@ -38,8 +38,14 @@ class Projects extends Component {
 
   changeSelected = newSelection => {
     const { selection } = this.state;
+    const SLEEP_DUR = selection === -1 ? 0 : 400;
     const selectionChange = selection === newSelection ? -1 : newSelection;
-    this.setState({ selection: selectionChange });
+    /* Set it to nothing to clear the state. Prevents the previous state to be
+       mixed in with the new state when loading */
+    this.setState({ selection: -1 });
+    setTimeout(() => {
+      this.setState({ selection: selectionChange });
+    }, SLEEP_DUR);
   }
 
   render() {
