@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c80e0e2e.chunk.css",
+    "main.js": "/static/js/main.ed1ed9c6.chunk.js",
+    "main.js.map": "/static/js/main.ed1ed9c6.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.a6aeaddd.chunk.js": "/static/js/2.a6aeaddd.chunk.js",
+    "static/js/2.a6aeaddd.chunk.js.map": "/static/js/2.a6aeaddd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.fefb0b9ea2945715b0c3e24306dedd76.js": "/precache-manifest.fefb0b9ea2945715b0c3e24306dedd76.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c80e0e2e.chunk.css.map": "/static/css/main.c80e0e2e.chunk.css.map",
+    "static/media/airo.png": "/static/media/airo.6a89f266.png",
+    "static/media/bash.png": "/static/media/bash.d982451f.png",
+    "static/media/bell.png": "/static/media/bell.af4937ed.png",
+    "static/media/cleansio.png": "/static/media/cleansio.af51d2ac.png",
+    "static/media/mcmaster-logo.png": "/static/media/mcmaster-logo.0e19196e.png",
+    "static/media/profile.jpg": "/static/media/profile.fa7d9984.jpg",
+    "static/media/roman-fury.gif": "/static/media/roman-fury.dcf28418.gif",
+    "static/media/roman-fury.png": "/static/media/roman-fury.fc501403.png",
+    "static/media/soul-emission.gif": "/static/media/soul-emission.5dd638d9.gif",
+    "static/media/soul-emission.png": "/static/media/soul-emission.bbaacf85.png",
+    "static/media/what-to-do.png": "/static/media/what-to-do.a63a4a12.png"
+  }
+}
