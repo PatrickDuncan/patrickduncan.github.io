@@ -3,12 +3,6 @@ import PropTypes from 'prop-types';
 
 import Content from '../../data/content.json';
 
-const tierColours = [
-  Content.colors['200'].cyan,
-  Content.colors['100'].cyan,
-  Content.colors['50'].cyan,
-];
-
 // i -> tier, j -> tech
 const getTechStyle = (i, length) => {
   const style = {};
@@ -18,7 +12,7 @@ const getTechStyle = (i, length) => {
 
 const TechnologyList = ({ displayTech }) => (
   <div>
-    {Object.keys(displayTech).map((tier, i) => (
+    {Object.keys(displayTech).map(tier => (
       <div
         key={tier}
         className="padding-b-30"
@@ -34,7 +28,7 @@ const TechnologyList = ({ displayTech }) => (
           >
             <div
               className="tech-list-item"
-              style={{ backgroundColor: tierColours[i] }}
+              style={{ backgroundColor: Content.colors['50'].cyan }}
             >
               { tech }
             </div>
